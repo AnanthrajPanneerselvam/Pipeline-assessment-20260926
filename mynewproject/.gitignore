@@ -1,7 +1,8 @@
+
 target/
 dbt_packages/
 logs/
-.env
 *.log
-profiles.yml
 dbt-user-creds.json
+profiles.yml
+
