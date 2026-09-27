@@ -7,12 +7,20 @@ models:
     columns:
       - name: event_date
         description: "Date when the event occurred."
+        tests:
+          - not_null
       - name: event_timestamp
         description: "Timestamp of the event."
+        tests:
+          - not_null
       - name: event_name
         description: "Name of the GA4 event."
+        tests:
+          - not_null
       - name: user_pseudo_id
         description: "Anonymous GA4 user identifier."
+        tests:
+          - not_null
       - name: ga_session_id
         description: "Google Analytics session ID."
       - name: ga_session_number
