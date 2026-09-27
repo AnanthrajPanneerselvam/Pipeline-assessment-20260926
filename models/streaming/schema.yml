@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_streaming_events
+    description: >
+      Cleaned streaming events from BigQuery. Duplicate deliveries are
+      removed using event_id, keeping the earliest ingested record.
+
+    columns:
+      - name: event_id
+        description: "Stable unique identifier for the incoming event."
+        tests:
+          - not_null
+          - unique
+      - name: event_timestamp
+        description: "Timestamp when the event occurred."
+        tests:
+          - not_null
+      - name: event_name
+        description: "Name of the incoming event."
+        tests:
+          - not_null
+      - name: user_pseudo_id
+        description: "Anonymous user identifier associated with the event."
+        tests:
+          - not_null
+      - name: ingested_at
+        description: "Timestamp when the event was loaded into BigQuery."
+        tests:
+          - not_null

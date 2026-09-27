@@ -5951,3 +5951,965 @@ having count(*) > 1
 [0m19:58:15.344557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014BCD241250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014BCCEEDD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014BCCEEC1B0>]}
 [0m19:58:15.344966 [debug] [MainThread]: Flushing usage events
 [0m19:58:16.601956 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:38:53.354862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAE6BCE660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAE4769090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAE95D3890>]}
+
+
+============================== 21:38:53.362641 | ff962ea7-4839-40fe-8d1b-17b23b8bcaa9 ==============================
+[0m21:38:53.362641 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:38:53.363301 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'invocation_command': 'dbt run --select stg_streaming_events', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m21:38:55.895713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ff962ea7-4839-40fe-8d1b-17b23b8bcaa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAFB4709D0>]}
+[0m21:38:55.964727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ff962ea7-4839-40fe-8d1b-17b23b8bcaa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAE4778380>]}
+[0m21:38:55.966466 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m21:38:56.714215 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m21:38:58.936620 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m21:38:58.937257 [debug] [MainThread]: Partial parsing: added file: pipeline_assessment_20260926://models\streaming\stream_events.py
+[0m21:38:58.937669 [debug] [MainThread]: Partial parsing: added file: pipeline_assessment_20260926://models\streaming\stg_streaming_events.sql
+[0m21:38:59.128877 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error in model stream_events (models\streaming\stream_events.py)
+  dbt allows exactly one model defined per python file, found 0
+[0m21:38:59.130211 [debug] [MainThread]: Command `dbt run` failed at 21:38:59.130093 after 6.08 seconds
+[0m21:38:59.130533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAFB3D2150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAFCB05750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAFB4308C0>]}
+[0m21:38:59.130817 [debug] [MainThread]: Flushing usage events
+[0m21:39:00.478827 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:41:58.293222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61BA6E660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C619619090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61E473890>]}
+
+
+============================== 21:41:58.300658 | 49e018e2-f351-4125-967d-5df6211b807e ==============================
+[0m21:41:58.300658 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:41:58.301523 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select stg_streaming_events', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m21:42:00.277525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '49e018e2-f351-4125-967d-5df6211b807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6303109D0>]}
+[0m21:42:00.345547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '49e018e2-f351-4125-967d-5df6211b807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C619628380>]}
+[0m21:42:00.346426 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m21:42:00.749817 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m21:42:00.960951 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m21:42:00.961542 [debug] [MainThread]: Partial parsing: added file: pipeline_assessment_20260926://models\streaming\stg_streaming_events.sql
+[0m21:42:01.249027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '49e018e2-f351-4125-967d-5df6211b807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6319A0A50>]}
+[0m21:42:01.348411 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m21:42:01.390374 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m21:42:01.442424 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m21:42:01.474052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '49e018e2-f351-4125-967d-5df6211b807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C631C186E0>]}
+[0m21:42:01.474669 [info ] [MainThread]: Found 10 models, 30 data tests, 1 source, 561 macros
+[0m21:42:01.475097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '49e018e2-f351-4125-967d-5df6211b807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C631C9C2F0>]}
+[0m21:42:01.477961 [info ] [MainThread]: 
+[0m21:42:01.478496 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m21:42:01.478837 [info ] [MainThread]: 
+[0m21:42:01.479474 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:42:01.480842 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596'
+[0m21:42:01.481185 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:42:06.093595 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce'
+[0m21:42:06.094051 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:42:07.595249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '49e018e2-f351-4125-967d-5df6211b807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61E520870>]}
+[0m21:42:07.595793 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:42:07.645796 [debug] [Thread-3 (]: Began running node model.pipeline_assessment_20260926.stg_streaming_events
+[0m21:42:07.646392 [info ] [Thread-3 (]: 1 of 1 START sql view model ga4_obfuscated_sample_ecommerce.stg_streaming_events  [RUN]
+[0m21:42:07.647128 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.pipeline_assessment_20260926.stg_streaming_events'
+[0m21:42:07.647658 [debug] [Thread-3 (]: Began compiling node model.pipeline_assessment_20260926.stg_streaming_events
+[0m21:42:07.655863 [debug] [Thread-3 (]: Writing injected SQL for node "model.pipeline_assessment_20260926.stg_streaming_events"
+[0m21:42:07.658353 [debug] [Thread-3 (]: Began executing node model.pipeline_assessment_20260926.stg_streaming_events
+[0m21:42:07.695926 [debug] [Thread-3 (]: Writing runtime sql for node "model.pipeline_assessment_20260926.stg_streaming_events"
+[0m21:42:07.699082 [debug] [Thread-3 (]: On model.pipeline_assessment_20260926.stg_streaming_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "model.pipeline_assessment_20260926.stg_streaming_events"} */
+
+
+  create or replace view `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+  OPTIONS()
+  as 
+
+with source_events as (
+    select
+        event_id,
+        event_timestamp,
+        event_name,
+        user_pseudo_id,
+        source,
+        medium,
+        revenue,
+        ingested_at
+    from `assessment-28596.ga4_obfuscated_sample_ecommerce.streaming_events`
+
+),
+
+deduplicated_events as (
+    select
+        *,
+        row_number() over (
+            partition by event_id
+            order by ingested_at
+        ) as rn
+    from source_events
+)
+
+select
+    event_id,
+    event_timestamp,
+    event_name,
+    user_pseudo_id,
+    source,
+    medium,
+    revenue,
+    ingested_at
+from deduplicated_events
+where rn = 1;
+
+
+[0m21:42:07.699738 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:42:09.208653 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:bcd5932f-1aa3-4665-a125-169e44e7cbee&page=queryresults
+[0m21:42:10.240274 [debug] [Thread-3 (]: SQL status: OK in 1.031 seconds
+[0m21:42:13.345690 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '49e018e2-f351-4125-967d-5df6211b807e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C631D02C90>]}
+[0m21:42:13.346334 [info ] [Thread-3 (]: 1 of 1 OK created sql view model ga4_obfuscated_sample_ecommerce.stg_streaming_events  [[32mCREATE VIEW (0 processed)[0m in 5.70s]
+[0m21:42:13.347023 [debug] [Thread-3 (]: Finished running node model.pipeline_assessment_20260926.stg_streaming_events
+[0m21:42:13.350642 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:42:13.385891 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:42:13.386258 [debug] [MainThread]: Connection 'list_assessment-28596' was properly closed.
+[0m21:42:13.386493 [debug] [MainThread]: Connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce' was properly closed.
+[0m21:42:13.386710 [debug] [MainThread]: Connection 'model.pipeline_assessment_20260926.stg_streaming_events' was properly closed.
+[0m21:42:13.386965 [info ] [MainThread]: 
+[0m21:42:13.387475 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 11.91 seconds (11.91s).
+[0m21:42:13.388281 [debug] [MainThread]: Command end result
+[0m21:42:13.433997 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m21:42:13.440967 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m21:42:13.445547 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m21:42:13.455584 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m21:42:13.455993 [info ] [MainThread]: 
+[0m21:42:13.456641 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:42:13.457146 [info ] [MainThread]: 
+[0m21:42:13.457670 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m21:42:13.458872 [debug] [MainThread]: Command `dbt run` succeeded at 21:42:13.458744 after 15.50 seconds
+[0m21:42:13.459243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C631D41910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C631C01C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C631C6AA30>]}
+[0m21:42:13.459586 [debug] [MainThread]: Flushing usage events
+[0m21:42:14.686759 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:44:42.945896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC5329E660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC50E39090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC55CA3890>]}
+
+
+============================== 21:44:42.952394 | de4ab6e2-102c-4bab-9093-91128ca5967a ==============================
+[0m21:44:42.952394 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:44:42.953121 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt test --select stg_streaming_events', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m21:44:44.824708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'de4ab6e2-102c-4bab-9093-91128ca5967a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC67B409D0>]}
+[0m21:44:44.878736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'de4ab6e2-102c-4bab-9093-91128ca5967a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC50E48380>]}
+[0m21:44:44.879567 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m21:44:45.278776 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m21:44:45.492381 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m21:44:45.492972 [debug] [MainThread]: Partial parsing: added file: pipeline_assessment_20260926://models\streaming\schema.yml
+[0m21:44:45.858523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'de4ab6e2-102c-4bab-9093-91128ca5967a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC691D0D50>]}
+[0m21:44:45.965624 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m21:44:45.969799 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m21:44:46.010472 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m21:44:46.047718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'de4ab6e2-102c-4bab-9093-91128ca5967a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC67B01B80>]}
+[0m21:44:46.048354 [info ] [MainThread]: Found 10 models, 36 data tests, 1 source, 561 macros
+[0m21:44:46.048828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'de4ab6e2-102c-4bab-9093-91128ca5967a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC6969C670>]}
+[0m21:44:46.051158 [info ] [MainThread]: 
+[0m21:44:46.051759 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m21:44:46.052218 [info ] [MainThread]: 
+[0m21:44:46.052846 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:44:46.057175 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce'
+[0m21:44:46.057496 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:44:48.018535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'de4ab6e2-102c-4bab-9093-91128ca5967a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC55D50870>]}
+[0m21:44:48.019263 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:44:48.062274 [debug] [Thread-7 (]: Began running node test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e
+[0m21:44:48.063363 [debug] [Thread-3 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120
+[0m21:44:48.064272 [debug] [Thread-4 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e
+[0m21:44:48.065081 [debug] [Thread-5 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547
+[0m21:44:48.062821 [info ] [Thread-7 (]: 6 of 6 START test unique_stg_streaming_events_event_id ......................... [RUN]
+[0m21:44:48.066664 [debug] [Thread-7 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e'
+[0m21:44:48.066020 [debug] [Thread-2 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe
+[0m21:44:48.064672 [info ] [Thread-4 (]: 3 of 6 START test not_null_stg_streaming_events_event_timestamp ................ [RUN]
+[0m21:44:48.068738 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e'
+[0m21:44:48.067491 [debug] [Thread-7 (]: Began compiling node test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e
+[0m21:44:48.063944 [info ] [Thread-3 (]: 2 of 6 START test not_null_stg_streaming_events_event_name ..................... [RUN]
+[0m21:44:48.067183 [debug] [Thread-6 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78
+[0m21:44:48.069771 [debug] [Thread-4 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e
+[0m21:44:48.078308 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120'
+[0m21:44:48.065538 [info ] [Thread-5 (]: 4 of 6 START test not_null_stg_streaming_events_ingested_at .................... [RUN]
+[0m21:44:48.105736 [debug] [Thread-7 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e"
+[0m21:44:48.067874 [info ] [Thread-2 (]: 1 of 6 START test not_null_stg_streaming_events_event_id ....................... [RUN]
+[0m21:44:48.120955 [debug] [Thread-3 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120
+[0m21:44:48.106401 [info ] [Thread-6 (]: 5 of 6 START test not_null_stg_streaming_events_user_pseudo_id ................. [RUN]
+[0m21:44:48.125634 [debug] [Thread-4 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e"
+[0m21:44:48.126546 [debug] [Thread-5 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547'
+[0m21:44:48.127446 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe'
+[0m21:44:48.138841 [debug] [Thread-3 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120"
+[0m21:44:48.139642 [debug] [Thread-6 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78'
+[0m21:44:48.141834 [debug] [Thread-6 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78
+[0m21:44:48.140903 [debug] [Thread-2 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe
+[0m21:44:48.140395 [debug] [Thread-5 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547
+[0m21:44:48.150126 [debug] [Thread-7 (]: Began executing node test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e
+[0m21:44:48.153220 [debug] [Thread-6 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78"
+[0m21:44:48.163559 [debug] [Thread-2 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe"
+[0m21:44:48.165456 [debug] [Thread-4 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e
+[0m21:44:48.166363 [debug] [Thread-3 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120
+[0m21:44:48.174929 [debug] [Thread-5 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547"
+[0m21:44:48.197617 [debug] [Thread-7 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e"
+[0m21:44:48.200352 [debug] [Thread-4 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e"
+[0m21:44:48.202114 [debug] [Thread-3 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120"
+[0m21:44:48.202725 [debug] [Thread-6 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78
+[0m21:44:48.205786 [debug] [Thread-6 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78"
+[0m21:44:48.206509 [debug] [Thread-2 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe
+[0m21:44:48.208636 [debug] [Thread-2 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe"
+[0m21:44:48.209417 [debug] [Thread-5 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547
+[0m21:44:48.212317 [debug] [Thread-5 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547"
+[0m21:44:48.210106 [debug] [Thread-4 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_timestamp
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where event_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:44:48.212988 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:44:48.213860 [debug] [Thread-3 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_name
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where event_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:44:48.214613 [debug] [Thread-7 (]: On test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select event_id as unique_field
+  from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+  where event_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:44:48.215178 [debug] [Thread-2 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where event_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:44:48.215800 [debug] [Thread-6 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_pseudo_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where user_pseudo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:44:48.216685 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:44:48.252943 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m21:44:48.253930 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:44:48.254464 [debug] [Thread-5 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ingested_at
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where ingested_at is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:44:48.254907 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m21:44:48.289612 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m21:44:50.138253 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:63fb7b50-b423-4d88-af46-28be29578ded&page=queryresults
+[0m21:44:50.200619 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:73c33814-667c-4767-bccf-fbe15bc6af6d&page=queryresults
+[0m21:44:50.275609 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:11f5f5ae-4195-410e-ac1f-ba58b6150ce7&page=queryresults
+[0m21:44:50.302083 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:3f9c246c-83e4-450b-b2c1-39b9e99bb367&page=queryresults
+[0m21:44:50.363790 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:d5bf9ae3-560b-46f7-91bd-3107203d5e65&page=queryresults
+[0m21:44:50.723570 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:76e5245b-8971-4cb1-8762-1adce77865da&page=queryresults
+[0m21:44:50.728526 [debug] [Thread-2 (]: SQL status: OK in 0.589 seconds
+[0m21:44:50.750828 [debug] [Thread-4 (]: SQL status: OK in 0.550 seconds
+[0m21:44:50.765992 [debug] [Thread-7 (]: SQL status: OK in 0.490 seconds
+[0m21:44:50.823460 [debug] [Thread-5 (]: SQL status: OK in 0.459 seconds
+[0m21:44:50.826798 [debug] [Thread-6 (]: SQL status: OK in 0.524 seconds
+[0m21:44:51.388052 [debug] [Thread-3 (]: SQL status: OK in 0.661 seconds
+[0m21:44:51.813515 [info ] [Thread-6 (]: 5 of 6 PASS not_null_stg_streaming_events_user_pseudo_id ....................... [[32mPASS[0m in 3.67s]
+[0m21:44:51.815388 [debug] [Thread-6 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78
+[0m21:44:51.839327 [info ] [Thread-5 (]: 4 of 6 PASS not_null_stg_streaming_events_ingested_at .......................... [[32mPASS[0m in 3.71s]
+[0m21:44:51.840547 [debug] [Thread-5 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547
+[0m21:44:51.857816 [info ] [Thread-2 (]: 1 of 6 PASS not_null_stg_streaming_events_event_id ............................. [[32mPASS[0m in 3.73s]
+[0m21:44:51.860530 [debug] [Thread-2 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe
+[0m21:44:51.872508 [info ] [Thread-4 (]: 3 of 6 PASS not_null_stg_streaming_events_event_timestamp ...................... [[32mPASS[0m in 3.80s]
+[0m21:44:51.876180 [debug] [Thread-4 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e
+[0m21:44:51.938307 [info ] [Thread-7 (]: 6 of 6 PASS unique_stg_streaming_events_event_id ............................... [[32mPASS[0m in 3.87s]
+[0m21:44:51.939969 [debug] [Thread-7 (]: Finished running node test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e
+[0m21:44:52.664482 [info ] [Thread-3 (]: 2 of 6 PASS not_null_stg_streaming_events_event_name ........................... [[32mPASS[0m in 4.59s]
+[0m21:44:52.668574 [debug] [Thread-3 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120
+[0m21:44:52.675716 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:44:52.766884 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:44:52.767527 [debug] [MainThread]: Connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce' was properly closed.
+[0m21:44:52.767989 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e' was properly closed.
+[0m21:44:52.768640 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e' was properly closed.
+[0m21:44:52.769368 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120' was properly closed.
+[0m21:44:52.770213 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547' was properly closed.
+[0m21:44:52.771120 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe' was properly closed.
+[0m21:44:52.771934 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78' was properly closed.
+[0m21:44:52.772945 [info ] [MainThread]: 
+[0m21:44:52.773974 [info ] [MainThread]: Finished running 6 data tests in 0 hours 0 minutes and 6.72 seconds (6.72s).
+[0m21:44:52.776263 [debug] [MainThread]: Command end result
+[0m21:44:53.126592 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m21:44:53.133821 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m21:44:53.141504 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m21:44:53.166027 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m21:44:53.166556 [info ] [MainThread]: 
+[0m21:44:53.167947 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:44:53.169651 [info ] [MainThread]: 
+[0m21:44:53.171211 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=6
+[0m21:44:53.173246 [debug] [MainThread]: Command `dbt test` succeeded at 21:44:53.173052 after 10.50 seconds
+[0m21:44:53.173983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC6953BA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC693F7960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC693F7490>]}
+[0m21:44:53.174817 [debug] [MainThread]: Flushing usage events
+[0m21:44:54.400141 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:49:48.879695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AA15EE660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A9F199090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AA3FF3890>]}
+
+
+============================== 21:49:48.886590 | c549867b-7671-4729-a9b5-a3d7930065c1 ==============================
+[0m21:49:48.886590 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:49:48.887120 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select mart_streaming_summary', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m21:49:50.661168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c549867b-7671-4729-a9b5-a3d7930065c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB5EB09D0>]}
+[0m21:49:50.725640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c549867b-7671-4729-a9b5-a3d7930065c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A9F1A8380>]}
+[0m21:49:50.726668 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m21:49:51.127666 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m21:49:51.322227 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m21:49:51.322790 [debug] [MainThread]: Partial parsing: added file: pipeline_assessment_20260926://models\streaming\mart_straming_summary.sql
+[0m21:49:51.619194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c549867b-7671-4729-a9b5-a3d7930065c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB754CC50>]}
+[0m21:49:51.746903 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m21:49:51.753556 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m21:49:51.792990 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m21:49:51.814042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c549867b-7671-4729-a9b5-a3d7930065c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB77FCC80>]}
+[0m21:49:51.814537 [info ] [MainThread]: Found 11 models, 36 data tests, 1 source, 561 macros
+[0m21:49:51.815152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c549867b-7671-4729-a9b5-a3d7930065c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB785C2F0>]}
+[0m21:49:51.816929 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'mart_streaming_summary' does not match any enabled nodes
+[0m21:49:51.818651 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m21:49:51.819252 [debug] [MainThread]: Command end result
+[0m21:49:51.860641 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m21:49:51.865567 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m21:49:51.868761 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m21:49:51.872447 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m21:49:51.873533 [debug] [MainThread]: Command `dbt run` succeeded at 21:49:51.873401 after 3.31 seconds
+[0m21:49:51.873882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AA3DE1F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB78E0050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB78E0290>]}
+[0m21:49:51.874208 [debug] [MainThread]: Flushing usage events
+[0m21:49:53.234253 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:51:26.014717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E96D6E660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E94919090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E99773890>]}
+
+
+============================== 21:51:26.019240 | 3d3605c7-cd06-4afc-936b-e56002098948 ==============================
+[0m21:51:26.019240 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:51:26.019803 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select mart_streaming_summary', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m21:51:27.365281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3d3605c7-cd06-4afc-936b-e56002098948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EAB6109D0>]}
+[0m21:51:27.440645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3d3605c7-cd06-4afc-936b-e56002098948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E94928380>]}
+[0m21:51:27.441693 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m21:51:27.816832 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m21:51:27.987801 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m21:51:27.988446 [debug] [MainThread]: Partial parsing: added file: pipeline_assessment_20260926://models\streaming\mart_streaming_summary.sql
+[0m21:51:27.988764 [debug] [MainThread]: Partial parsing: deleted file: pipeline_assessment_20260926://models\streaming\mart_straming_summary.sql
+[0m21:51:28.296489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3d3605c7-cd06-4afc-936b-e56002098948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EACCB0C50>]}
+[0m21:51:28.440182 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m21:51:28.446941 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m21:51:28.485475 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m21:51:28.506036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3d3605c7-cd06-4afc-936b-e56002098948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EACF3CC80>]}
+[0m21:51:28.506650 [info ] [MainThread]: Found 11 models, 36 data tests, 1 source, 561 macros
+[0m21:51:28.507179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3d3605c7-cd06-4afc-936b-e56002098948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EACF942F0>]}
+[0m21:51:28.509656 [info ] [MainThread]: 
+[0m21:51:28.510304 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m21:51:28.510953 [info ] [MainThread]: 
+[0m21:51:28.516112 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:51:28.518450 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596'
+[0m21:51:28.518879 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:51:30.092481 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce'
+[0m21:51:30.093003 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:51:31.844080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3d3605c7-cd06-4afc-936b-e56002098948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E99820870>]}
+[0m21:51:31.844582 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:51:31.887322 [debug] [Thread-3 (]: Began running node model.pipeline_assessment_20260926.mart_streaming_summary
+[0m21:51:31.887807 [info ] [Thread-3 (]: 1 of 1 START sql view model ga4_obfuscated_sample_ecommerce.mart_streaming_summary  [RUN]
+[0m21:51:31.888462 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.pipeline_assessment_20260926.mart_streaming_summary'
+[0m21:51:31.888743 [debug] [Thread-3 (]: Began compiling node model.pipeline_assessment_20260926.mart_streaming_summary
+[0m21:51:31.894523 [debug] [Thread-3 (]: Writing injected SQL for node "model.pipeline_assessment_20260926.mart_streaming_summary"
+[0m21:51:31.897021 [debug] [Thread-3 (]: Began executing node model.pipeline_assessment_20260926.mart_streaming_summary
+[0m21:51:31.935801 [debug] [Thread-3 (]: Writing runtime sql for node "model.pipeline_assessment_20260926.mart_streaming_summary"
+[0m21:51:31.938500 [debug] [Thread-3 (]: On model.pipeline_assessment_20260926.mart_streaming_summary: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "model.pipeline_assessment_20260926.mart_streaming_summary"} */
+
+
+  create or replace view `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_streaming_summary`
+  OPTIONS()
+  as 
+
+select
+    DATE(event_timestamp) as event_date,
+    source,
+    medium,
+    COUNT(*) as event_count,
+    COUNTIF(event_name = 'purchase') as purchase_count,
+    SUM(
+        CASE
+            WHEN event_name = 'purchase'
+            THEN revenue
+            ELSE 0
+        END
+    ) as purchase_revenue
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+group by
+    event_date,
+    source,
+    medium;
+
+
+[0m21:51:31.939193 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:51:33.183384 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:ddc2657c-8c2c-4fab-822b-48691423cd55&page=queryresults
+[0m21:51:34.240139 [debug] [Thread-3 (]: SQL status: OK in 1.056 seconds
+[0m21:51:34.341601 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3d3605c7-cd06-4afc-936b-e56002098948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EACFAF110>]}
+[0m21:51:34.342203 [info ] [Thread-3 (]: 1 of 1 OK created sql view model ga4_obfuscated_sample_ecommerce.mart_streaming_summary  [[32mCREATE VIEW (0 processed)[0m in 2.45s]
+[0m21:51:34.343456 [debug] [Thread-3 (]: Finished running node model.pipeline_assessment_20260926.mart_streaming_summary
+[0m21:51:34.346623 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:51:34.382579 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:51:34.383024 [debug] [MainThread]: Connection 'list_assessment-28596' was properly closed.
+[0m21:51:34.383272 [debug] [MainThread]: Connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce' was properly closed.
+[0m21:51:34.383488 [debug] [MainThread]: Connection 'model.pipeline_assessment_20260926.mart_streaming_summary' was properly closed.
+[0m21:51:34.383749 [info ] [MainThread]: 
+[0m21:51:34.384307 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.87 seconds (5.87s).
+[0m21:51:34.385160 [debug] [MainThread]: Command end result
+[0m21:51:34.436642 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m21:51:34.440385 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m21:51:34.444405 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m21:51:34.453778 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m21:51:34.454140 [info ] [MainThread]: 
+[0m21:51:34.454557 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:51:34.454975 [info ] [MainThread]: 
+[0m21:51:34.455359 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m21:51:34.456358 [debug] [MainThread]: Command `dbt run` succeeded at 21:51:34.456242 after 8.73 seconds
+[0m21:51:34.456667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E972C3750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EACF8C2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EACF8E8F0>]}
+[0m21:51:34.456954 [debug] [MainThread]: Flushing usage events
+[0m21:51:35.649532 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:02:28.170824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A19F17E660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A19CD29090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1A1B83890>]}
+
+
+============================== 22:02:28.178301 | 678d51c9-ffb1-49ee-84c2-fcf92a45863b ==============================
+[0m22:02:28.178301 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:02:28.179021 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select mart_attribution_summary', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m22:02:30.097261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '678d51c9-ffb1-49ee-84c2-fcf92a45863b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1B3A209D0>]}
+[0m22:02:30.151175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '678d51c9-ffb1-49ee-84c2-fcf92a45863b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A19CD38380>]}
+[0m22:02:30.152081 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m22:02:30.614273 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m22:02:30.852277 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m22:02:30.853209 [debug] [MainThread]: Partial parsing: added file: pipeline_assessment_20260926://models\marts\mart_attribution_summary.sql
+[0m22:02:31.183866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '678d51c9-ffb1-49ee-84c2-fcf92a45863b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1B50C0C50>]}
+[0m22:02:31.309378 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m22:02:31.314288 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m22:02:31.365423 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m22:02:31.395476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '678d51c9-ffb1-49ee-84c2-fcf92a45863b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1B536CE60>]}
+[0m22:02:31.396072 [info ] [MainThread]: Found 12 models, 36 data tests, 1 source, 561 macros
+[0m22:02:31.396624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '678d51c9-ffb1-49ee-84c2-fcf92a45863b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1B53D02F0>]}
+[0m22:02:31.399052 [info ] [MainThread]: 
+[0m22:02:31.399569 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m22:02:31.400003 [info ] [MainThread]: 
+[0m22:02:31.400872 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:02:31.402696 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596'
+[0m22:02:31.403620 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:02:32.787498 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce'
+[0m22:02:32.788190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:02:34.318739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '678d51c9-ffb1-49ee-84c2-fcf92a45863b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1A1C30870>]}
+[0m22:02:34.319424 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:02:34.359361 [debug] [Thread-3 (]: Began running node model.pipeline_assessment_20260926.mart_attribution_summary
+[0m22:02:34.359859 [info ] [Thread-3 (]: 1 of 1 START sql view model ga4_obfuscated_sample_ecommerce.mart_attribution_summary  [RUN]
+[0m22:02:34.360443 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.pipeline_assessment_20260926.mart_attribution_summary'
+[0m22:02:34.360807 [debug] [Thread-3 (]: Began compiling node model.pipeline_assessment_20260926.mart_attribution_summary
+[0m22:02:34.365714 [debug] [Thread-3 (]: Writing injected SQL for node "model.pipeline_assessment_20260926.mart_attribution_summary"
+[0m22:02:34.367027 [debug] [Thread-3 (]: Began executing node model.pipeline_assessment_20260926.mart_attribution_summary
+[0m22:02:34.400127 [debug] [Thread-3 (]: Writing runtime sql for node "model.pipeline_assessment_20260926.mart_attribution_summary"
+[0m22:02:34.402166 [debug] [Thread-3 (]: On model.pipeline_assessment_20260926.mart_attribution_summary: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "model.pipeline_assessment_20260926.mart_attribution_summary"} */
+
+
+  create or replace view `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution_summary`
+  OPTIONS()
+  as 
+
+with attribution as (
+    select
+        purchase_date,
+        purchase_revenue,
+        first_click_source,
+        first_click_medium,
+        last_click_source,
+        last_click_medium
+    from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution`
+)
+
+select
+    'First Click' as attribution_model,
+    SUM(purchase_revenue) as total_revenue,
+    COUNT(*) as total_purchases
+from attribution
+
+union all
+
+select
+    'Last Click' as attribution_model,
+    SUM(purchase_revenue) as total_revenue,
+    COUNT(*) as total_purchases
+from attribution;
+
+
+[0m22:02:34.405442 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:02:35.883932 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:82fafc84-97d2-4ae1-bb15-b9763fb98ed7&page=queryresults
+[0m22:02:36.912657 [debug] [Thread-3 (]: SQL status: OK in 1.028 seconds
+[0m22:02:37.010297 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '678d51c9-ffb1-49ee-84c2-fcf92a45863b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1B53C71D0>]}
+[0m22:02:37.010909 [info ] [Thread-3 (]: 1 of 1 OK created sql view model ga4_obfuscated_sample_ecommerce.mart_attribution_summary  [[32mCREATE VIEW (0 processed)[0m in 2.65s]
+[0m22:02:37.011678 [debug] [Thread-3 (]: Finished running node model.pipeline_assessment_20260926.mart_attribution_summary
+[0m22:02:37.013442 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:02:37.050004 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:02:37.050386 [debug] [MainThread]: Connection 'list_assessment-28596' was properly closed.
+[0m22:02:37.050626 [debug] [MainThread]: Connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce' was properly closed.
+[0m22:02:37.050846 [debug] [MainThread]: Connection 'model.pipeline_assessment_20260926.mart_attribution_summary' was properly closed.
+[0m22:02:37.051107 [info ] [MainThread]: 
+[0m22:02:37.051736 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.65 seconds (5.65s).
+[0m22:02:37.055073 [debug] [MainThread]: Command end result
+[0m22:02:37.107610 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m22:02:37.111573 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m22:02:37.115366 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m22:02:37.123841 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m22:02:37.124365 [info ] [MainThread]: 
+[0m22:02:37.125084 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:02:37.125665 [info ] [MainThread]: 
+[0m22:02:37.126323 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m22:02:37.127495 [debug] [MainThread]: Command `dbt run` succeeded at 22:02:37.127383 after 9.25 seconds
+[0m22:02:37.127836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1B5424890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1B5398370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1B539AA30>]}
+[0m22:02:37.128243 [debug] [MainThread]: Flushing usage events
+[0m22:02:38.324504 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:05:50.568357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C7DFE660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C59A9090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233CA803890>]}
+
+
+============================== 22:05:50.572637 | 9755fb43-0789-4dd9-97d7-5f265f731910 ==============================
+[0m22:05:50.572637 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:05:50.573182 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select mart_attribution_daily', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m22:05:51.864618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9755fb43-0789-4dd9-97d7-5f265f731910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233DC6F09D0>]}
+[0m22:05:51.925867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9755fb43-0789-4dd9-97d7-5f265f731910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C59B8380>]}
+[0m22:05:51.926750 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m22:05:52.356151 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m22:05:52.529978 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m22:05:52.530693 [debug] [MainThread]: Partial parsing: added file: pipeline_assessment_20260926://models\marts\mart_attribution_daily.sql
+[0m22:05:52.806467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9755fb43-0789-4dd9-97d7-5f265f731910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233DDD8CC50>]}
+[0m22:05:52.928893 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m22:05:52.933013 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m22:05:52.964272 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m22:05:52.979734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9755fb43-0789-4dd9-97d7-5f265f731910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233DE03D040>]}
+[0m22:05:52.980434 [info ] [MainThread]: Found 13 models, 36 data tests, 1 source, 561 macros
+[0m22:05:52.981065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9755fb43-0789-4dd9-97d7-5f265f731910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233DE0A42F0>]}
+[0m22:05:52.983426 [info ] [MainThread]: 
+[0m22:05:52.983968 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m22:05:52.984353 [info ] [MainThread]: 
+[0m22:05:52.984966 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:05:52.986077 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596'
+[0m22:05:52.986358 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:05:54.267925 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce'
+[0m22:05:54.268449 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:05:55.701817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9755fb43-0789-4dd9-97d7-5f265f731910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233CA8B0870>]}
+[0m22:05:55.702359 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:05:55.746067 [debug] [Thread-3 (]: Began running node model.pipeline_assessment_20260926.mart_attribution_daily
+[0m22:05:55.746654 [info ] [Thread-3 (]: 1 of 1 START sql view model ga4_obfuscated_sample_ecommerce.mart_attribution_daily  [RUN]
+[0m22:05:55.747385 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.pipeline_assessment_20260926.mart_attribution_daily'
+[0m22:05:55.747767 [debug] [Thread-3 (]: Began compiling node model.pipeline_assessment_20260926.mart_attribution_daily
+[0m22:05:55.754249 [debug] [Thread-3 (]: Writing injected SQL for node "model.pipeline_assessment_20260926.mart_attribution_daily"
+[0m22:05:55.756184 [debug] [Thread-3 (]: Began executing node model.pipeline_assessment_20260926.mart_attribution_daily
+[0m22:05:55.792180 [debug] [Thread-3 (]: Writing runtime sql for node "model.pipeline_assessment_20260926.mart_attribution_daily"
+[0m22:05:55.793667 [debug] [Thread-3 (]: On model.pipeline_assessment_20260926.mart_attribution_daily: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "model.pipeline_assessment_20260926.mart_attribution_daily"} */
+
+
+  create or replace view `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution_daily`
+  OPTIONS()
+  as 
+
+with attribution as (
+
+    select
+        purchase_date,
+        purchase_revenue,
+        first_click_source,
+        first_click_medium,
+        last_click_source,
+        last_click_medium
+    from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution`
+
+)
+
+select
+    purchase_date,
+    SUM(purchase_revenue) as total_revenue,
+    SUM(
+        CASE
+            WHEN first_click_source IS NOT NULL
+            THEN purchase_revenue
+            ELSE 0
+        END
+    ) as first_click_revenue,
+
+    SUM(
+        CASE
+            WHEN last_click_source IS NOT NULL
+            THEN purchase_revenue
+            ELSE 0
+        END
+    ) as last_click_revenue,
+    COUNT(*) as total_purchases
+from attribution
+group by purchase_date;
+
+
+[0m22:05:55.794231 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:05:57.310798 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:103783f5-831d-4a8a-b71e-c807f86a4615&page=queryresults
+[0m22:05:58.282616 [debug] [Thread-3 (]: SQL status: OK in 0.971 seconds
+[0m22:05:58.405624 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9755fb43-0789-4dd9-97d7-5f265f731910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233DE09B290>]}
+[0m22:05:58.406594 [info ] [Thread-3 (]: 1 of 1 OK created sql view model ga4_obfuscated_sample_ecommerce.mart_attribution_daily  [[32mCREATE VIEW (0 processed)[0m in 2.66s]
+[0m22:05:58.407828 [debug] [Thread-3 (]: Finished running node model.pipeline_assessment_20260926.mart_attribution_daily
+[0m22:05:58.409965 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:05:58.449969 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:05:58.450408 [debug] [MainThread]: Connection 'list_assessment-28596' was properly closed.
+[0m22:05:58.450793 [debug] [MainThread]: Connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce' was properly closed.
+[0m22:05:58.451020 [debug] [MainThread]: Connection 'model.pipeline_assessment_20260926.mart_attribution_daily' was properly closed.
+[0m22:05:58.451297 [info ] [MainThread]: 
+[0m22:05:58.451872 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.47 seconds (5.47s).
+[0m22:05:58.452557 [debug] [MainThread]: Command end result
+[0m22:05:58.499945 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m22:05:58.505996 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m22:05:58.509438 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m22:05:58.515577 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m22:05:58.516139 [info ] [MainThread]: 
+[0m22:05:58.516941 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:05:58.517539 [info ] [MainThread]: 
+[0m22:05:58.518014 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m22:05:58.519189 [debug] [MainThread]: Command `dbt run` succeeded at 22:05:58.519065 after 8.12 seconds
+[0m22:05:58.519550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233DE091910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233DE088410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233DE08AAD0>]}
+[0m22:05:58.519868 [debug] [MainThread]: Flushing usage events
+[0m22:05:59.892556 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:08:03.400223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026EFF4DE660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026EFD089090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E81F73890>]}
+
+
+============================== 22:08:03.405381 | c3199dc0-d8fd-4f02-9f71-c334d8c5147c ==============================
+[0m22:08:03.405381 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:08:03.406055 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select mart_attribution_daily', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m22:08:04.737696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c3199dc0-d8fd-4f02-9f71-c334d8c5147c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E93F509D0>]}
+[0m22:08:04.791652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c3199dc0-d8fd-4f02-9f71-c334d8c5147c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026EFD098380>]}
+[0m22:08:04.792468 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m22:08:05.200612 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m22:08:05.401980 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:08:05.402629 [debug] [MainThread]: Partial parsing: updated file: pipeline_assessment_20260926://models\marts\mart_attribution_daily.sql
+[0m22:08:05.696085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c3199dc0-d8fd-4f02-9f71-c334d8c5147c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E955F0C50>]}
+[0m22:08:05.828004 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m22:08:05.833065 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m22:08:05.869479 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m22:08:05.890812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c3199dc0-d8fd-4f02-9f71-c334d8c5147c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E95899040>]}
+[0m22:08:05.891394 [info ] [MainThread]: Found 13 models, 36 data tests, 1 source, 561 macros
+[0m22:08:05.891972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c3199dc0-d8fd-4f02-9f71-c334d8c5147c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E958EC2F0>]}
+[0m22:08:05.894662 [info ] [MainThread]: 
+[0m22:08:05.895245 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m22:08:05.895639 [info ] [MainThread]: 
+[0m22:08:05.896202 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:08:05.898011 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596'
+[0m22:08:05.898391 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:08:07.064401 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce'
+[0m22:08:07.065119 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:08:08.651553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c3199dc0-d8fd-4f02-9f71-c334d8c5147c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E82020870>]}
+[0m22:08:08.652188 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:08:08.707421 [debug] [Thread-3 (]: Began running node model.pipeline_assessment_20260926.mart_attribution_daily
+[0m22:08:08.708214 [info ] [Thread-3 (]: 1 of 1 START sql view model ga4_obfuscated_sample_ecommerce.mart_attribution_daily  [RUN]
+[0m22:08:08.709136 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.pipeline_assessment_20260926.mart_attribution_daily'
+[0m22:08:08.709510 [debug] [Thread-3 (]: Began compiling node model.pipeline_assessment_20260926.mart_attribution_daily
+[0m22:08:08.720471 [debug] [Thread-3 (]: Writing injected SQL for node "model.pipeline_assessment_20260926.mart_attribution_daily"
+[0m22:08:08.723271 [debug] [Thread-3 (]: Began executing node model.pipeline_assessment_20260926.mart_attribution_daily
+[0m22:08:08.772643 [debug] [Thread-3 (]: Writing runtime sql for node "model.pipeline_assessment_20260926.mart_attribution_daily"
+[0m22:08:08.774266 [debug] [Thread-3 (]: On model.pipeline_assessment_20260926.mart_attribution_daily: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "model.pipeline_assessment_20260926.mart_attribution_daily"} */
+
+
+  create or replace view `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution_daily`
+  OPTIONS()
+  as 
+
+with attribution as (
+    select
+        purchase_date,
+        purchase_revenue,
+        first_click_source,
+        first_click_medium,
+        last_click_source,
+        last_click_medium
+    from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution`
+),
+
+max_date as (
+    select
+        max(purchase_date) as latest_purchase_date
+    from attribution
+)
+
+select
+    a.purchase_date,
+    SUM(a.purchase_revenue) as total_revenue,
+    SUM(
+        CASE
+            WHEN a.first_click_source IS NOT NULL
+            THEN a.purchase_revenue
+            ELSE 0
+        END
+    ) as first_click_revenue,
+    SUM(
+        CASE
+            WHEN a.last_click_source IS NOT NULL
+            THEN a.purchase_revenue
+            ELSE 0
+        END
+    ) as last_click_revenue,
+    COUNT(*) as total_purchases
+from attribution a
+cross join max_date m
+where a.purchase_date >= DATE_SUB(
+    m.latest_purchase_date,
+    INTERVAL 13 DAY
+)
+group by a.purchase_date;
+
+
+[0m22:08:08.775036 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:08:10.280798 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:664cc23c-9544-4b62-ab5a-e5fbe19c6020&page=queryresults
+[0m22:08:11.238459 [debug] [Thread-3 (]: SQL status: OK in 0.956 seconds
+[0m22:08:11.443580 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c3199dc0-d8fd-4f02-9f71-c334d8c5147c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E958FEF90>]}
+[0m22:08:11.444882 [info ] [Thread-3 (]: 1 of 1 OK created sql view model ga4_obfuscated_sample_ecommerce.mart_attribution_daily  [[32mCREATE VIEW (0 processed)[0m in 2.73s]
+[0m22:08:11.446220 [debug] [Thread-3 (]: Finished running node model.pipeline_assessment_20260926.mart_attribution_daily
+[0m22:08:11.450108 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:08:11.506572 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:08:11.507132 [debug] [MainThread]: Connection 'list_assessment-28596' was properly closed.
+[0m22:08:11.507550 [debug] [MainThread]: Connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce' was properly closed.
+[0m22:08:11.507909 [debug] [MainThread]: Connection 'model.pipeline_assessment_20260926.mart_attribution_daily' was properly closed.
+[0m22:08:11.508217 [info ] [MainThread]: 
+[0m22:08:11.508727 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.61 seconds (5.61s).
+[0m22:08:11.509571 [debug] [MainThread]: Command end result
+[0m22:08:11.596390 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m22:08:11.601728 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m22:08:11.606355 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m22:08:11.615477 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m22:08:11.615874 [info ] [MainThread]: 
+[0m22:08:11.616476 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:08:11.616918 [info ] [MainThread]: 
+[0m22:08:11.617376 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m22:08:11.618571 [debug] [MainThread]: Command `dbt run` succeeded at 22:08:11.618448 after 8.49 seconds
+[0m22:08:11.618987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E958DD910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E958C8410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E958CAAD0>]}
+[0m22:08:11.619384 [debug] [MainThread]: Flushing usage events
+[0m22:08:12.713235 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:11:15.081243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B5F49E660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B5D049090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B61EA3890>]}
+
+
+============================== 22:11:15.087957 | f8c3b8b9-6778-4c6e-80e0-bb77d6ba5aec ==============================
+[0m22:11:15.087957 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:11:15.088519 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select mart_attribution_channel', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m22:11:16.848236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f8c3b8b9-6778-4c6e-80e0-bb77d6ba5aec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B73D709D0>]}
+[0m22:11:16.903674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f8c3b8b9-6778-4c6e-80e0-bb77d6ba5aec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B5D058380>]}
+[0m22:11:16.904504 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m22:11:17.296890 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m22:11:17.500226 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m22:11:17.500805 [debug] [MainThread]: Partial parsing: added file: pipeline_assessment_20260926://models\marts\mart_attribution_channel.sql
+[0m22:11:17.755643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f8c3b8b9-6778-4c6e-80e0-bb77d6ba5aec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B75410C50>]}
+[0m22:11:17.867073 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m22:11:17.872847 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m22:11:17.913489 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m22:11:17.933875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f8c3b8b9-6778-4c6e-80e0-bb77d6ba5aec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B756BD040>]}
+[0m22:11:17.934669 [info ] [MainThread]: Found 14 models, 36 data tests, 1 source, 561 macros
+[0m22:11:17.935334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f8c3b8b9-6778-4c6e-80e0-bb77d6ba5aec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B757004B0>]}
+[0m22:11:17.938155 [info ] [MainThread]: 
+[0m22:11:17.938866 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m22:11:17.939435 [info ] [MainThread]: 
+[0m22:11:17.940211 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:11:17.941831 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596'
+[0m22:11:17.942512 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:11:19.208765 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce'
+[0m22:11:19.209521 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:11:20.780705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f8c3b8b9-6778-4c6e-80e0-bb77d6ba5aec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B61F54870>]}
+[0m22:11:20.781330 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:11:20.825761 [debug] [Thread-3 (]: Began running node model.pipeline_assessment_20260926.mart_attribution_channel
+[0m22:11:20.826519 [info ] [Thread-3 (]: 1 of 1 START sql view model ga4_obfuscated_sample_ecommerce.mart_attribution_channel  [RUN]
+[0m22:11:20.827379 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.pipeline_assessment_20260926.mart_attribution_channel'
+[0m22:11:20.827785 [debug] [Thread-3 (]: Began compiling node model.pipeline_assessment_20260926.mart_attribution_channel
+[0m22:11:20.834424 [debug] [Thread-3 (]: Writing injected SQL for node "model.pipeline_assessment_20260926.mart_attribution_channel"
+[0m22:11:20.835851 [debug] [Thread-3 (]: Began executing node model.pipeline_assessment_20260926.mart_attribution_channel
+[0m22:11:20.868535 [debug] [Thread-3 (]: Writing runtime sql for node "model.pipeline_assessment_20260926.mart_attribution_channel"
+[0m22:11:20.870157 [debug] [Thread-3 (]: On model.pipeline_assessment_20260926.mart_attribution_channel: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "model.pipeline_assessment_20260926.mart_attribution_channel"} */
+
+
+  create or replace view `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution_channel`
+  OPTIONS()
+  as 
+
+with attribution as (
+    select
+        purchase_date,
+        purchase_revenue,
+        first_click_source,
+        first_click_medium,
+        last_click_source,
+        last_click_medium
+    from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution`
+
+),
+
+first_click as (
+    select
+        'First Click' as attribution_model,
+        first_click_source as source,
+        first_click_medium as medium,
+        SUM(purchase_revenue) as attributed_revenue,
+        COUNT(*) as attributed_purchases
+    from attribution
+    where first_click_source is not null
+    group by
+        first_click_source,
+        first_click_medium
+),
+
+last_click as (
+    select
+        'Last Click' as attribution_model,
+        last_click_source as source,
+        last_click_medium as medium,
+        SUM(purchase_revenue) as attributed_revenue,
+        COUNT(*) as attributed_purchases
+    from attribution
+    where last_click_source is not null
+    group by
+        last_click_source,
+        last_click_medium
+)
+
+select * from first_click
+union all
+select * from last_click;
+
+
+[0m22:11:20.870822 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:11:22.503379 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:23a83a2c-cf13-4a79-84d6-831df431ad74&page=queryresults
+[0m22:11:23.519247 [debug] [Thread-3 (]: SQL status: OK in 1.015 seconds
+[0m22:11:23.618393 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f8c3b8b9-6778-4c6e-80e0-bb77d6ba5aec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B7572B290>]}
+[0m22:11:23.619060 [info ] [Thread-3 (]: 1 of 1 OK created sql view model ga4_obfuscated_sample_ecommerce.mart_attribution_channel  [[32mCREATE VIEW (0 processed)[0m in 2.79s]
+[0m22:11:23.619856 [debug] [Thread-3 (]: Finished running node model.pipeline_assessment_20260926.mart_attribution_channel
+[0m22:11:23.622834 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:11:23.659725 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:11:23.660098 [debug] [MainThread]: Connection 'list_assessment-28596' was properly closed.
+[0m22:11:23.660342 [debug] [MainThread]: Connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce' was properly closed.
+[0m22:11:23.660555 [debug] [MainThread]: Connection 'model.pipeline_assessment_20260926.mart_attribution_channel' was properly closed.
+[0m22:11:23.660874 [info ] [MainThread]: 
+[0m22:11:23.661497 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.72 seconds (5.72s).
+[0m22:11:23.663106 [debug] [MainThread]: Command end result
+[0m22:11:23.705144 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m22:11:23.708535 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m22:11:23.712071 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m22:11:23.719372 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m22:11:23.719864 [info ] [MainThread]: 
+[0m22:11:23.720492 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:11:23.721093 [info ] [MainThread]: 
+[0m22:11:23.721604 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m22:11:23.722694 [debug] [MainThread]: Command `dbt run` succeeded at 22:11:23.722577 after 8.97 seconds
+[0m22:11:23.723013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B757705D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B756F44B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B756F6B70>]}
+[0m22:11:23.723312 [debug] [MainThread]: Flushing usage events
+[0m22:11:24.972079 [debug] [MainThread]: An error was encountered while trying to flush usage events
