@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_events
+    description: "Staging model for GA4 events."
+
+    columns:
+      - name: event_date
+        description: "Date when the event occurred."
+      - name: event_timestamp
+        description: "Timestamp of the event."
+      - name: event_name
+        description: "Name of the GA4 event."
+      - name: user_pseudo_id
+        description: "Anonymous GA4 user identifier."
+      - name: ga_session_id
+        description: "Google Analytics session ID."
+      - name: ga_session_number
+        description: "Session number for the user."
+      - name: user_acquisition_source
+        description: "Source of the user's acquisition."
+      - name: user_acquisition_medium
+        description: "Medium of the user's acquisition."
+      - name: purchase_revenue
+        description: "Revenue associated with purchase."

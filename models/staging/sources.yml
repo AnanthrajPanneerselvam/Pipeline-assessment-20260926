@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: ga4
+    description: "GA4 publicdbt sample dataset"
+
+    database: bigquery-public-data
+    schema: ga4_obfuscated_sample_ecommerce
+
+    tables:
+      - name: events_*
+        description: "GA4 event tables"
