@@ -16,6 +16,8 @@ select
 -- session id/number inside the repeated event_params array
         (select value.int_value from unnest(event_params) where key = 'ga_session_id')     as ga_session_id,
         (select value.int_value from unnest(event_params) where key = 'ga_session_number') as ga_session_number,
+        (select value.string_value from unnest(event_params) where key = 'source') as event_source,
+        (select value.string_value from unnest(event_params) where key = 'medium') as event_medium,
 -- user-level first-touch acquisition (recorded once per user, repeated on every event)
         traffic_source.source   as user_acquisition_source,
         traffic_source.medium   as user_acquisition_medium,
