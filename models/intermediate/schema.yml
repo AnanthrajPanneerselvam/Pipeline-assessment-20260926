@@ -1,0 +1,53 @@
+version: 2
+
+models:
+
+  - name: int_user_touchpoints
+    description: >
+      Creates one marketing touchpoint per user session using the first
+      event in the session with a complete non-null source and medium pair.
+    columns:
+      - name: user_pseudo_id
+        description: "GA4 anonymous user identifier."
+        tests:
+          - not_null
+      - name: ga_session_id
+        description: "GA4 session identifier."
+        tests:
+          - not_null
+      - name: touchpoint_timestamp
+        description: "Timestamp of the first valid source and medium event in the session."
+        tests:
+          - not_null
+      - name: source
+        description: "Marketing source associated with the session touchpoint."
+        tests:
+          - not_null
+      - name: medium
+        description: "Marketing medium associated with the session touchpoint."
+        tests:
+          - not_null
+
+  - name: int_purchases
+    description: >
+      Deduplicated purchase events. Only valid transaction IDs are retained,
+      with the earliest purchase event selected when a transaction appears
+      more than once.
+    columns:
+      - name: transaction_id
+        description: "Unique purchase transaction identifier."
+        tests:
+          - not_null
+          - unique
+      - name: user_pseudo_id
+        description: "GA4 anonymous user identifier."
+        tests:
+          - not_null
+      - name: event_timestamp
+        description: "Timestamp when the purchase event occurred."
+        tests:
+          - not_null
+      - name: event_date
+        description: "Date when the purchase occurred."
+        tests:
+          - not_null

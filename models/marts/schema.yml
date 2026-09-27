@@ -1,0 +1,70 @@
+version: 2
+
+models:
+
+  - name: fct_first_click_attribution
+    description: >
+      Assigns each deduplicated purchase to the earliest eligible marketing
+      touchpoint for the same user within the 14-day lookback window.
+    columns:
+      - name: transaction_id
+        description: "Unique purchase transaction identifier."
+        tests:
+          - not_null
+          - unique
+      - name: user_pseudo_id
+        description: "GA4 anonymous user identifier."
+        tests:
+          - not_null
+      - name: purchase_timestamp
+        description: "Timestamp when the purchase occurred."
+        tests:
+          - not_null
+      - name: attribution_model
+        description: "Attribution model used for the row."
+
+  - name: fct_last_click_attribution
+    description: >
+      Assigns each deduplicated purchase to the latest eligible marketing
+      touchpoint for the same user within the 14-day lookback window.
+    columns:
+      - name: transaction_id
+        description: "Unique purchase transaction identifier."
+        tests:
+          - not_null
+          - unique
+      - name: user_pseudo_id
+        description: "GA4 anonymous user identifier."
+        tests:
+          - not_null
+      - name: purchase_timestamp
+        description: "Timestamp when the purchase occurred."
+        tests:
+          - not_null
+      - name: attribution_model
+        description: "Attribution model used for the row."
+
+  - name: mart_attribution
+    description: >
+      Dashboard-ready purchase-level attribution model containing both
+      First Click and Last Click attribution results.
+    columns:
+      - name: transaction_id
+        description: "Unique deduplicated purchase transaction identifier."
+        tests:
+          - not_null
+          - unique
+      - name: user_pseudo_id
+        description: "GA4 anonymous user identifier."
+        tests:
+          - not_null
+      - name: purchase_timestamp
+        description: "Timestamp when the purchase occurred."
+        tests:
+          - not_null
+      - name: purchase_date
+        description: "Date when the purchase occurred."
+        tests:
+          - not_null
+      - name: purchase_revenue
+        description: "Revenue associated with the purchase."
