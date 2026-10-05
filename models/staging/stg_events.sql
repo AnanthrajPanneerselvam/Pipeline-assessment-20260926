@@ -4,8 +4,7 @@
 
 with source as (
     select *
-    from {{ source('ga4', 'events_*') }}
-)
+    from {{ source('ga4', 'events_*') }})
 
 select
         parse_date('%Y%m%d', event_date)   as event_date,
