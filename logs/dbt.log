@@ -6913,3 +6913,1586 @@ select * from last_click;
 [0m22:11:23.723013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B757705D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B756F44B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B756F6B70>]}
 [0m22:11:23.723312 [debug] [MainThread]: Flushing usage events
 [0m22:11:24.972079 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:12:24.691321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252F658A900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252F4139090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252F8F93890>]}
+
+
+============================== 14:12:24.699144 | 7377d365-ee7f-4022-a38e-0318e968b73c ==============================
+[0m14:12:24.699144 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:12:24.699830 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m14:12:29.694340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7377d365-ee7f-4022-a38e-0318e968b73c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528B3B09D0>]}
+[0m14:12:29.755456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7377d365-ee7f-4022-a38e-0318e968b73c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252F4148380>]}
+[0m14:12:29.756535 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m14:12:30.380746 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m14:12:32.152468 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:12:32.152863 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:12:32.153112 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:12:32.164071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7377d365-ee7f-4022-a38e-0318e968b73c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528CA52250>]}
+[0m14:12:32.287634 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m14:12:32.306963 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m14:12:32.355759 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m14:12:32.396228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7377d365-ee7f-4022-a38e-0318e968b73c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528CBD33E0>]}
+[0m14:12:32.396724 [info ] [MainThread]: Found 14 models, 36 data tests, 1 source, 561 macros
+[0m14:12:32.397290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7377d365-ee7f-4022-a38e-0318e968b73c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528CC3D470>]}
+[0m14:12:32.401552 [info ] [MainThread]: 
+[0m14:12:32.402143 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m14:12:32.402678 [info ] [MainThread]: 
+[0m14:12:32.403334 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:12:32.410918 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce'
+[0m14:12:32.414578 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:12:34.013518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7377d365-ee7f-4022-a38e-0318e968b73c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528CC314A0>]}
+[0m14:12:34.014006 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:12:34.060304 [debug] [Thread-5 (]: Began running node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720
+[0m14:12:34.061280 [debug] [Thread-7 (]: Began running node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa
+[0m14:12:34.061926 [debug] [Thread-6 (]: Began running node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc
+[0m14:12:34.062396 [debug] [Thread-2 (]: Began running node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74
+[0m14:12:34.062828 [debug] [Thread-3 (]: Began running node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69
+[0m14:12:34.063770 [debug] [Thread-4 (]: Began running node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27
+[0m14:12:34.063292 [info ] [Thread-5 (]: 4 of 36 START test not_null_fct_last_click_attribution_purchase_timestamp ...... [RUN]
+[0m14:12:34.064115 [info ] [Thread-7 (]: 6 of 36 START test not_null_fct_last_click_attribution_user_pseudo_id .......... [RUN]
+[0m14:12:34.065138 [info ] [Thread-2 (]: 1 of 36 START test not_null_fct_first_click_attribution_purchase_timestamp ..... [RUN]
+[0m14:12:34.067027 [debug] [Thread-5 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720'
+[0m14:12:34.064546 [info ] [Thread-6 (]: 5 of 36 START test not_null_fct_last_click_attribution_transaction_id .......... [RUN]
+[0m14:12:34.067983 [debug] [Thread-7 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa'
+[0m14:12:34.068854 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74'
+[0m14:12:34.069456 [debug] [Thread-5 (]: Began compiling node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720
+[0m14:12:34.065677 [info ] [Thread-3 (]: 2 of 36 START test not_null_fct_first_click_attribution_transaction_id ......... [RUN]
+[0m14:12:34.070269 [debug] [Thread-6 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc'
+[0m14:12:34.066286 [info ] [Thread-4 (]: 3 of 36 START test not_null_fct_first_click_attribution_user_pseudo_id ......... [RUN]
+[0m14:12:34.070984 [debug] [Thread-7 (]: Began compiling node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa
+[0m14:12:34.079186 [debug] [Thread-2 (]: Began compiling node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74
+[0m14:12:34.097072 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69'
+[0m14:12:34.110822 [debug] [Thread-5 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720"
+[0m14:12:34.111500 [debug] [Thread-6 (]: Began compiling node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc
+[0m14:12:34.112363 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27'
+[0m14:12:34.122291 [debug] [Thread-7 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa"
+[0m14:12:34.128924 [debug] [Thread-2 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74"
+[0m14:12:34.129533 [debug] [Thread-3 (]: Began compiling node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69
+[0m14:12:34.139642 [debug] [Thread-6 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc"
+[0m14:12:34.140240 [debug] [Thread-4 (]: Began compiling node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27
+[0m14:12:34.155962 [debug] [Thread-4 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27"
+[0m14:12:34.149942 [debug] [Thread-3 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69"
+[0m14:12:34.156821 [debug] [Thread-7 (]: Began executing node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa
+[0m14:12:34.157571 [debug] [Thread-2 (]: Began executing node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74
+[0m14:12:34.189442 [debug] [Thread-2 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74"
+[0m14:12:34.187817 [debug] [Thread-7 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa"
+[0m14:12:34.190869 [debug] [Thread-4 (]: Began executing node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27
+[0m14:12:34.192826 [debug] [Thread-4 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27"
+[0m14:12:34.193375 [debug] [Thread-3 (]: Began executing node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69
+[0m14:12:34.190168 [debug] [Thread-5 (]: Began executing node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720
+[0m14:12:34.195082 [debug] [Thread-6 (]: Began executing node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc
+[0m14:12:34.196837 [debug] [Thread-3 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69"
+[0m14:12:34.198972 [debug] [Thread-5 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720"
+[0m14:12:34.199580 [debug] [Thread-2 (]: On test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select purchase_timestamp
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`fct_first_click_attribution`
+where purchase_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:34.203151 [debug] [Thread-6 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc"
+[0m14:12:34.204646 [debug] [Thread-4 (]: On test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_pseudo_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`fct_first_click_attribution`
+where user_pseudo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:34.206793 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:12:34.205938 [debug] [Thread-7 (]: On test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_pseudo_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`fct_last_click_attribution`
+where user_pseudo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:34.205466 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:12:34.207468 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m14:12:34.208060 [debug] [Thread-5 (]: On test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select purchase_timestamp
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`fct_last_click_attribution`
+where purchase_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:34.241898 [debug] [Thread-3 (]: On test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`fct_first_click_attribution`
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:34.244094 [debug] [Thread-6 (]: On test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`fct_last_click_attribution`
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:34.314987 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m14:12:34.316059 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:12:34.317282 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m14:12:35.935551 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:c3c1830f-96bc-4df1-8151-678aa91feef3&page=queryresults
+[0m14:12:35.959890 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:23c4d114-f9c4-4b3a-8a08-34ad8a187162&page=queryresults
+[0m14:12:35.963175 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:69c4bd8d-59b0-4144-8169-872774e180e8&page=queryresults
+[0m14:12:35.972174 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:32306205-e5b0-4a42-ad30-0e15a4726528&page=queryresults
+[0m14:12:35.979385 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:afb1b956-c6a8-4957-9467-cdbc8235f5be&page=queryresults
+[0m14:12:35.980645 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:f1c47953-9653-4a0f-8654-af26bc557a7a&page=queryresults
+[0m14:12:39.529960 [debug] [Thread-3 (]: SQL status: OK in 3.594 seconds
+[0m14:12:39.840590 [debug] [Thread-6 (]: SQL status: OK in 3.861 seconds
+[0m14:12:39.857399 [debug] [Thread-2 (]: SQL status: OK in 3.897 seconds
+[0m14:12:39.877241 [debug] [Thread-5 (]: SQL status: OK in 3.896 seconds
+[0m14:12:40.843247 [debug] [Thread-7 (]: SQL status: OK in 4.870 seconds
+[0m14:12:40.961508 [debug] [Thread-4 (]: SQL status: OK in 4.998 seconds
+[0m14:12:43.602354 [info ] [Thread-5 (]: 4 of 36 PASS not_null_fct_last_click_attribution_purchase_timestamp ............ [[32mPASS[0m in 9.54s]
+[0m14:12:43.605886 [debug] [Thread-5 (]: Finished running node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720
+[0m14:12:43.606260 [debug] [Thread-5 (]: Began running node test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde
+[0m14:12:43.606570 [info ] [Thread-5 (]: 7 of 36 START test not_null_int_purchases_event_date ........................... [RUN]
+[0m14:12:43.611060 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_purchase_timestamp.b4962b6720, now test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde)
+[0m14:12:43.611435 [debug] [Thread-5 (]: Began compiling node test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde
+[0m14:12:43.604340 [info ] [Thread-4 (]: 3 of 36 PASS not_null_fct_first_click_attribution_user_pseudo_id ............... [[32mPASS[0m in 9.49s]
+[0m14:12:43.610485 [info ] [Thread-2 (]: 1 of 36 PASS not_null_fct_first_click_attribution_purchase_timestamp ........... [[32mPASS[0m in 9.54s]
+[0m14:12:43.626748 [debug] [Thread-5 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde"
+[0m14:12:43.627946 [debug] [Thread-4 (]: Finished running node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27
+[0m14:12:43.629970 [debug] [Thread-2 (]: Finished running node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74
+[0m14:12:43.614311 [info ] [Thread-7 (]: 6 of 36 PASS not_null_fct_last_click_attribution_user_pseudo_id ................ [[32mPASS[0m in 9.55s]
+[0m14:12:43.642273 [debug] [Thread-4 (]: Began running node test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22
+[0m14:12:43.639174 [info ] [Thread-6 (]: 5 of 36 PASS not_null_fct_last_click_attribution_transaction_id ................ [[32mPASS[0m in 9.57s]
+[0m14:12:43.643251 [debug] [Thread-2 (]: Began running node test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5
+[0m14:12:43.643976 [debug] [Thread-5 (]: Began executing node test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde
+[0m14:12:43.641432 [info ] [Thread-3 (]: 2 of 36 PASS not_null_fct_first_click_attribution_transaction_id ............... [[32mPASS[0m in 9.54s]
+[0m14:12:43.644862 [debug] [Thread-7 (]: Finished running node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa
+[0m14:12:43.646269 [debug] [Thread-6 (]: Finished running node test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc
+[0m14:12:43.645499 [info ] [Thread-4 (]: 8 of 36 START test not_null_int_purchases_event_timestamp ...................... [RUN]
+[0m14:12:43.649587 [debug] [Thread-5 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde"
+[0m14:12:43.647405 [info ] [Thread-2 (]: 9 of 36 START test not_null_int_purchases_transaction_id ....................... [RUN]
+[0m14:12:43.650551 [debug] [Thread-3 (]: Finished running node test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69
+[0m14:12:43.651127 [debug] [Thread-7 (]: Began running node test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61
+[0m14:12:43.651808 [debug] [Thread-6 (]: Began running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74
+[0m14:12:43.652728 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_user_pseudo_id.29abfcfa27, now test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22)
+[0m14:12:43.655242 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_purchase_timestamp.883908bd74, now test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5)
+[0m14:12:43.656298 [debug] [Thread-3 (]: Began running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe
+[0m14:12:43.656654 [info ] [Thread-7 (]: 10 of 36 START test not_null_int_purchases_user_pseudo_id ...................... [RUN]
+[0m14:12:43.657297 [info ] [Thread-6 (]: 11 of 36 START test not_null_int_user_touchpoints_ga_session_id ................ [RUN]
+[0m14:12:43.658030 [debug] [Thread-4 (]: Began compiling node test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22
+[0m14:12:43.658745 [debug] [Thread-2 (]: Began compiling node test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5
+[0m14:12:43.659851 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_user_pseudo_id.9de9d951fa, now test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61)
+[0m14:12:43.660333 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_fct_last_click_attribution_transaction_id.bf09141fdc, now test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74)
+[0m14:12:43.659275 [info ] [Thread-3 (]: 12 of 36 START test not_null_int_user_touchpoints_medium ....................... [RUN]
+[0m14:12:43.668845 [debug] [Thread-5 (]: On test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_date
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_purchases`
+where event_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:43.668049 [debug] [Thread-4 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22"
+[0m14:12:43.682158 [debug] [Thread-2 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5"
+[0m14:12:43.682872 [debug] [Thread-7 (]: Began compiling node test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61
+[0m14:12:43.683385 [debug] [Thread-6 (]: Began compiling node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74
+[0m14:12:43.684028 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_fct_first_click_attribution_transaction_id.59d87e2f69, now test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe)
+[0m14:12:43.684927 [debug] [Thread-5 (]: Opening a new connection, currently in state closed
+[0m14:12:43.695195 [debug] [Thread-7 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61"
+[0m14:12:43.705263 [debug] [Thread-6 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74"
+[0m14:12:43.705937 [debug] [Thread-3 (]: Began compiling node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe
+[0m14:12:43.706661 [debug] [Thread-2 (]: Began executing node test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5
+[0m14:12:43.707124 [debug] [Thread-4 (]: Began executing node test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22
+[0m14:12:43.759662 [debug] [Thread-3 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe"
+[0m14:12:43.760361 [debug] [Thread-6 (]: Began executing node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74
+[0m14:12:43.764639 [debug] [Thread-4 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22"
+[0m14:12:43.765135 [debug] [Thread-2 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5"
+[0m14:12:43.765609 [debug] [Thread-7 (]: Began executing node test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61
+[0m14:12:43.770733 [debug] [Thread-7 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61"
+[0m14:12:43.767636 [debug] [Thread-6 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74"
+[0m14:12:43.772442 [debug] [Thread-4 (]: On test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_timestamp
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_purchases`
+where event_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:43.773575 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:12:43.774226 [debug] [Thread-2 (]: On test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_purchases`
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:43.774639 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:12:43.775025 [debug] [Thread-3 (]: Began executing node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe
+[0m14:12:43.776408 [debug] [Thread-3 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe"
+[0m14:12:43.777721 [debug] [Thread-6 (]: On test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ga_session_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_user_touchpoints`
+where ga_session_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:43.812929 [debug] [Thread-6 (]: Opening a new connection, currently in state closed
+[0m14:12:43.811843 [debug] [Thread-7 (]: On test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_pseudo_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_purchases`
+where user_pseudo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:43.847529 [debug] [Thread-3 (]: On test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select medium
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_user_touchpoints`
+where medium is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:43.849632 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:12:43.849124 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m14:12:45.035939 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:107c7d12-8b17-4230-a987-6a3339655561&page=queryresults
+[0m14:12:45.155232 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:883969ff-c467-4cc1-8e71-6c7ee0c8c13a&page=queryresults
+[0m14:12:45.171372 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:2cbbb98c-036a-4841-af2b-4407e6ac80be&page=queryresults
+[0m14:12:45.184103 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:5cae599e-4fee-4914-a35a-f7ecfb62f198&page=queryresults
+[0m14:12:45.207205 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:7ef584aa-8bb4-47d5-b78d-e14fb19f70d0&page=queryresults
+[0m14:12:45.241751 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:def552b9-6fa2-4ab3-b74f-2bbcc89e121d&page=queryresults
+[0m14:12:48.417736 [debug] [Thread-7 (]: SQL status: OK in 3.262 seconds
+[0m14:12:48.898492 [debug] [Thread-5 (]: SQL status: OK in 3.862 seconds
+[0m14:12:48.934843 [debug] [Thread-4 (]: SQL status: OK in 3.750 seconds
+[0m14:12:48.950128 [debug] [Thread-2 (]: SQL status: OK in 3.742 seconds
+[0m14:12:49.372896 [debug] [Thread-6 (]: SQL status: OK in 4.130 seconds
+[0m14:12:49.375959 [info ] [Thread-7 (]: 10 of 36 PASS not_null_int_purchases_user_pseudo_id ............................ [[32mPASS[0m in 5.72s]
+[0m14:12:49.377624 [debug] [Thread-7 (]: Finished running node test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61
+[0m14:12:49.378051 [debug] [Thread-7 (]: Began running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758
+[0m14:12:49.378436 [info ] [Thread-7 (]: 13 of 36 START test not_null_int_user_touchpoints_source ....................... [RUN]
+[0m14:12:49.379557 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_int_purchases_user_pseudo_id.f385a28b61, now test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758)
+[0m14:12:49.379934 [debug] [Thread-7 (]: Began compiling node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758
+[0m14:12:49.381643 [debug] [Thread-3 (]: SQL status: OK in 4.210 seconds
+[0m14:12:49.389274 [debug] [Thread-7 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758"
+[0m14:12:49.393262 [debug] [Thread-7 (]: Began executing node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758
+[0m14:12:49.395172 [debug] [Thread-7 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758"
+[0m14:12:49.397812 [debug] [Thread-7 (]: On test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select source
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_user_touchpoints`
+where source is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:49.398890 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m14:12:49.826129 [info ] [Thread-4 (]: 8 of 36 PASS not_null_int_purchases_event_timestamp ............................ [[32mPASS[0m in 6.17s]
+[0m14:12:49.827006 [debug] [Thread-4 (]: Finished running node test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22
+[0m14:12:49.827325 [debug] [Thread-4 (]: Began running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c
+[0m14:12:49.827598 [info ] [Thread-4 (]: 14 of 36 START test not_null_int_user_touchpoints_touchpoint_timestamp ......... [RUN]
+[0m14:12:49.828154 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_int_purchases_event_timestamp.ed689c4b22, now test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c)
+[0m14:12:49.828458 [debug] [Thread-4 (]: Began compiling node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c
+[0m14:12:49.834268 [debug] [Thread-4 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c"
+[0m14:12:49.836858 [debug] [Thread-4 (]: Began executing node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c
+[0m14:12:49.839046 [debug] [Thread-4 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c"
+[0m14:12:49.842245 [debug] [Thread-4 (]: On test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select touchpoint_timestamp
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_user_touchpoints`
+where touchpoint_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:49.843692 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:12:49.882510 [info ] [Thread-2 (]: 9 of 36 PASS not_null_int_purchases_transaction_id ............................. [[32mPASS[0m in 6.23s]
+[0m14:12:49.886177 [debug] [Thread-2 (]: Finished running node test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5
+[0m14:12:49.886582 [debug] [Thread-2 (]: Began running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af
+[0m14:12:49.884656 [info ] [Thread-5 (]: 7 of 36 PASS not_null_int_purchases_event_date ................................. [[32mPASS[0m in 6.27s]
+[0m14:12:49.887879 [debug] [Thread-5 (]: Finished running node test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde
+[0m14:12:49.888228 [debug] [Thread-5 (]: Began running node test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6
+[0m14:12:49.886897 [info ] [Thread-2 (]: 15 of 36 START test not_null_int_user_touchpoints_user_pseudo_id ............... [RUN]
+[0m14:12:49.889896 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_int_purchases_transaction_id.8416eca4f5, now test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af)
+[0m14:12:49.890365 [debug] [Thread-2 (]: Began compiling node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af
+[0m14:12:49.902004 [debug] [Thread-2 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af"
+[0m14:12:49.888733 [info ] [Thread-5 (]: 16 of 36 START test not_null_mart_attribution_purchase_date .................... [RUN]
+[0m14:12:49.902969 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_int_purchases_event_date.c69afe6dde, now test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6)
+[0m14:12:49.903313 [debug] [Thread-5 (]: Began compiling node test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6
+[0m14:12:49.908406 [debug] [Thread-5 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6"
+[0m14:12:49.911055 [debug] [Thread-5 (]: Began executing node test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6
+[0m14:12:49.912346 [debug] [Thread-2 (]: Began executing node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af
+[0m14:12:49.918730 [debug] [Thread-2 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af"
+[0m14:12:49.915851 [debug] [Thread-5 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6"
+[0m14:12:49.920842 [debug] [Thread-5 (]: On test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select purchase_date
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution`
+where purchase_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:49.922267 [debug] [Thread-5 (]: Opening a new connection, currently in state closed
+[0m14:12:49.921722 [debug] [Thread-2 (]: On test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_pseudo_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_user_touchpoints`
+where user_pseudo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:49.922758 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:12:50.228495 [info ] [Thread-6 (]: 11 of 36 PASS not_null_int_user_touchpoints_ga_session_id ...................... [[32mPASS[0m in 6.57s]
+[0m14:12:50.230000 [debug] [Thread-6 (]: Finished running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74
+[0m14:12:50.230457 [debug] [Thread-6 (]: Began running node test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36
+[0m14:12:50.230788 [info ] [Thread-6 (]: 17 of 36 START test not_null_mart_attribution_purchase_timestamp ............... [RUN]
+[0m14:12:50.231332 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_int_user_touchpoints_ga_session_id.2b3c475e74, now test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36)
+[0m14:12:50.231638 [debug] [Thread-6 (]: Began compiling node test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36
+[0m14:12:50.237340 [debug] [Thread-6 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36"
+[0m14:12:50.241201 [debug] [Thread-6 (]: Began executing node test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36
+[0m14:12:50.243052 [debug] [Thread-6 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36"
+[0m14:12:50.246772 [debug] [Thread-6 (]: On test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select purchase_timestamp
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution`
+where purchase_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:50.247555 [debug] [Thread-6 (]: Opening a new connection, currently in state closed
+[0m14:12:50.252769 [info ] [Thread-3 (]: 12 of 36 PASS not_null_int_user_touchpoints_medium ............................. [[32mPASS[0m in 6.57s]
+[0m14:12:50.290977 [debug] [Thread-3 (]: Finished running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe
+[0m14:12:50.291481 [debug] [Thread-3 (]: Began running node test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0
+[0m14:12:50.291846 [info ] [Thread-3 (]: 18 of 36 START test not_null_mart_attribution_transaction_id ................... [RUN]
+[0m14:12:50.292526 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_int_user_touchpoints_medium.2d04dc9dbe, now test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0)
+[0m14:12:50.292929 [debug] [Thread-3 (]: Began compiling node test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0
+[0m14:12:50.304288 [debug] [Thread-3 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0"
+[0m14:12:50.308309 [debug] [Thread-3 (]: Began executing node test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0
+[0m14:12:50.310358 [debug] [Thread-3 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0"
+[0m14:12:50.313100 [debug] [Thread-3 (]: On test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution`
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:50.313905 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:12:50.700963 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:5e4c2179-54ed-469a-a958-e60f5031f67f&page=queryresults
+[0m14:12:51.129199 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:89e8e172-b89f-4a0e-ac28-c991b607ee7b&page=queryresults
+[0m14:12:51.202693 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:19475a15-e980-4783-8182-b40887fd5b0f&page=queryresults
+[0m14:12:51.241752 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:bf1ea8d8-710f-4e6d-b560-caf4e5afe49a&page=queryresults
+[0m14:12:51.532774 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:cfda49b1-5cbf-482b-82f5-d79caaa6edb2&page=queryresults
+[0m14:12:51.534467 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:2c152f5a-97e4-4c9c-9f9b-f71d7cd9f998&page=queryresults
+[0m14:12:54.815327 [debug] [Thread-7 (]: SQL status: OK in 4.113 seconds
+[0m14:12:54.817946 [debug] [Thread-2 (]: SQL status: OK in 3.575 seconds
+[0m14:12:55.195649 [debug] [Thread-4 (]: SQL status: OK in 4.066 seconds
+[0m14:12:55.788877 [info ] [Thread-7 (]: 13 of 36 PASS not_null_int_user_touchpoints_source ............................. [[32mPASS[0m in 6.41s]
+[0m14:12:55.792332 [debug] [Thread-7 (]: Finished running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758
+[0m14:12:55.792702 [debug] [Thread-7 (]: Began running node test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50
+[0m14:12:55.793005 [info ] [Thread-7 (]: 19 of 36 START test not_null_mart_attribution_user_pseudo_id ................... [RUN]
+[0m14:12:55.794327 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_int_user_touchpoints_source.e123348758, now test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50)
+[0m14:12:55.794709 [debug] [Thread-7 (]: Began compiling node test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50
+[0m14:12:55.804254 [debug] [Thread-7 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50"
+[0m14:12:55.791209 [info ] [Thread-2 (]: 15 of 36 PASS not_null_int_user_touchpoints_user_pseudo_id ..................... [[32mPASS[0m in 5.90s]
+[0m14:12:55.806805 [debug] [Thread-2 (]: Finished running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af
+[0m14:12:55.808329 [debug] [Thread-2 (]: Began running node test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778
+[0m14:12:55.810937 [info ] [Thread-2 (]: 20 of 36 START test not_null_my_second_dbt_model_id ............................ [RUN]
+[0m14:12:55.812102 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_int_user_touchpoints_user_pseudo_id.70647fa5af, now test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:12:55.813775 [debug] [Thread-2 (]: Began compiling node test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778
+[0m14:12:55.812718 [debug] [Thread-7 (]: Began executing node test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50
+[0m14:12:55.827227 [debug] [Thread-7 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50"
+[0m14:12:55.825519 [debug] [Thread-2 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:12:55.830976 [debug] [Thread-7 (]: On test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_pseudo_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution`
+where user_pseudo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:55.832880 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m14:12:55.831957 [debug] [Thread-2 (]: Began executing node test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778
+[0m14:12:55.835442 [debug] [Thread-2 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:12:55.881734 [debug] [Thread-2 (]: On test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`my_second_dbt_model`
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:55.882469 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:12:56.204882 [debug] [Thread-5 (]: SQL status: OK in 5.001 seconds
+[0m14:12:56.234452 [debug] [Thread-3 (]: SQL status: OK in 4.699 seconds
+[0m14:12:56.284372 [info ] [Thread-4 (]: 14 of 36 PASS not_null_int_user_touchpoints_touchpoint_timestamp ............... [[32mPASS[0m in 6.46s]
+[0m14:12:56.285065 [debug] [Thread-4 (]: Finished running node test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c
+[0m14:12:56.285410 [debug] [Thread-4 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054
+[0m14:12:56.285683 [info ] [Thread-4 (]: 21 of 36 START test not_null_stg_events_event_date ............................. [RUN]
+[0m14:12:56.286188 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_int_user_touchpoints_touchpoint_timestamp.d11d19879c, now test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054)
+[0m14:12:56.286453 [debug] [Thread-4 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054
+[0m14:12:56.291891 [debug] [Thread-4 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054"
+[0m14:12:56.296741 [debug] [Thread-4 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054
+[0m14:12:56.298740 [debug] [Thread-4 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054"
+[0m14:12:56.302282 [debug] [Thread-4 (]: On test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_date
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_events`
+where event_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:56.302789 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:12:56.542240 [debug] [Thread-6 (]: SQL status: OK in 5.009 seconds
+[0m14:12:57.122442 [info ] [Thread-5 (]: 16 of 36 PASS not_null_mart_attribution_purchase_date .......................... [[32mPASS[0m in 7.22s]
+[0m14:12:57.123695 [debug] [Thread-5 (]: Finished running node test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6
+[0m14:12:57.124045 [debug] [Thread-5 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3
+[0m14:12:57.124347 [info ] [Thread-5 (]: 22 of 36 START test not_null_stg_events_event_name ............................. [RUN]
+[0m14:12:57.125585 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_date.c1c865b2c6, now test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3)
+[0m14:12:57.126007 [debug] [Thread-5 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3
+[0m14:12:57.135082 [debug] [Thread-5 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3"
+[0m14:12:57.137544 [info ] [Thread-3 (]: 18 of 36 PASS not_null_mart_attribution_transaction_id ......................... [[32mPASS[0m in 6.84s]
+[0m14:12:57.140683 [debug] [Thread-3 (]: Finished running node test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0
+[0m14:12:57.141167 [debug] [Thread-3 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a
+[0m14:12:57.142296 [info ] [Thread-3 (]: 23 of 36 START test not_null_stg_events_event_timestamp ........................ [RUN]
+[0m14:12:57.143570 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_mart_attribution_transaction_id.228401ece0, now test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a)
+[0m14:12:57.143945 [debug] [Thread-3 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a
+[0m14:12:57.143180 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:951af744-5b1b-4b7f-b49a-5f4910e80bc0&page=queryresults
+[0m14:12:57.152953 [debug] [Thread-3 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a"
+[0m14:12:57.154490 [debug] [Thread-5 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3
+[0m14:12:57.156080 [debug] [Thread-5 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3"
+[0m14:12:57.158611 [debug] [Thread-3 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a
+[0m14:12:57.161228 [debug] [Thread-3 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a"
+[0m14:12:57.159311 [debug] [Thread-5 (]: On test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_name
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_events`
+where event_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:57.162088 [debug] [Thread-5 (]: Opening a new connection, currently in state closed
+[0m14:12:57.201241 [debug] [Thread-3 (]: On test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_timestamp
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_events`
+where event_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:57.201772 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:12:57.236974 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:814669ae-7709-477a-b1e6-74da1eea1f7e&page=queryresults
+[0m14:12:57.316782 [info ] [Thread-6 (]: 17 of 36 PASS not_null_mart_attribution_purchase_timestamp ..................... [[32mPASS[0m in 7.09s]
+[0m14:12:57.317509 [debug] [Thread-6 (]: Finished running node test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36
+[0m14:12:57.317896 [debug] [Thread-6 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7
+[0m14:12:57.318246 [info ] [Thread-6 (]: 24 of 36 START test not_null_stg_events_user_pseudo_id ......................... [RUN]
+[0m14:12:57.318827 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_mart_attribution_purchase_timestamp.003bbf5f36, now test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7)
+[0m14:12:57.319186 [debug] [Thread-6 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7
+[0m14:12:57.325096 [debug] [Thread-6 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7"
+[0m14:12:57.327903 [debug] [Thread-6 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7
+[0m14:12:57.330972 [debug] [Thread-6 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7"
+[0m14:12:57.333084 [debug] [Thread-6 (]: On test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_pseudo_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_events`
+where user_pseudo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:57.333867 [debug] [Thread-6 (]: Opening a new connection, currently in state closed
+[0m14:12:57.420140 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:9a7b97f4-776f-46bb-9435-16c541ce3719&page=queryresults
+[0m14:12:57.605922 [debug] [Thread-2 (]: SQL status: OK in 0.452 seconds
+[0m14:12:58.389014 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:93d78b67-b4ab-49f0-98f6-780ae9fa4dd7&page=queryresults
+[0m14:12:58.446005 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:d4e8febb-e6f5-4f29-b6b3-c5ca5df0aa8c&page=queryresults
+[0m14:12:58.453086 [info ] [Thread-2 (]: 20 of 36 PASS not_null_my_second_dbt_model_id .................................. [[32mPASS[0m in 2.64s]
+[0m14:12:58.454055 [debug] [Thread-2 (]: Finished running node test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778
+[0m14:12:58.454475 [debug] [Thread-2 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe
+[0m14:12:58.454932 [info ] [Thread-2 (]: 25 of 36 START test not_null_stg_streaming_events_event_id ..................... [RUN]
+[0m14:12:58.455507 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_my_second_dbt_model_id.151b76d778, now test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe)
+[0m14:12:58.455857 [debug] [Thread-2 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe
+[0m14:12:58.465706 [debug] [Thread-2 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe"
+[0m14:12:58.468537 [debug] [Thread-2 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe
+[0m14:12:58.471204 [debug] [Thread-2 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe"
+[0m14:12:58.477012 [debug] [Thread-2 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where event_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:58.477875 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:12:58.525754 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:71b66d23-d04e-48bf-844c-8141e5754c43&page=queryresults
+[0m14:12:59.774883 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:34f8e81a-d79d-4b10-bb66-c9f83a56ad34&page=queryresults
+[0m14:13:00.212758 [debug] [Thread-2 (]: SQL status: OK in 0.437 seconds
+[0m14:13:00.572417 [debug] [Thread-4 (]: SQL status: OK in 3.152 seconds
+[0m14:13:01.073973 [info ] [Thread-2 (]: 25 of 36 PASS not_null_stg_streaming_events_event_id ........................... [[32mPASS[0m in 2.62s]
+[0m14:13:01.074913 [debug] [Thread-2 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe
+[0m14:13:01.075310 [debug] [Thread-2 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120
+[0m14:13:01.075629 [info ] [Thread-2 (]: 26 of 36 START test not_null_stg_streaming_events_event_name ................... [RUN]
+[0m14:13:01.076544 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_id.40f5df3efe, now test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120)
+[0m14:13:01.077019 [debug] [Thread-2 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120
+[0m14:13:01.086633 [debug] [Thread-2 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120"
+[0m14:13:01.089354 [debug] [Thread-2 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120
+[0m14:13:01.091796 [debug] [Thread-2 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120"
+[0m14:13:01.097242 [debug] [Thread-2 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_name
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where event_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:01.098258 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:13:01.256306 [debug] [Thread-5 (]: SQL status: OK in 2.810 seconds
+[0m14:13:01.403135 [debug] [Thread-7 (]: SQL status: OK in 4.166 seconds
+[0m14:13:01.402130 [info ] [Thread-4 (]: 21 of 36 PASS not_null_stg_events_event_date ................................... [[32mPASS[0m in 5.12s]
+[0m14:13:01.404085 [debug] [Thread-4 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054
+[0m14:13:01.404435 [debug] [Thread-4 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e
+[0m14:13:01.404742 [info ] [Thread-4 (]: 27 of 36 START test not_null_stg_streaming_events_event_timestamp .............. [RUN]
+[0m14:13:01.406435 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_stg_events_event_date.f160b8d054, now test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e)
+[0m14:13:01.407023 [debug] [Thread-4 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e
+[0m14:13:01.440745 [debug] [Thread-4 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e"
+[0m14:13:01.443796 [debug] [Thread-4 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e
+[0m14:13:01.445892 [debug] [Thread-4 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e"
+[0m14:13:01.449885 [debug] [Thread-4 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_timestamp
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where event_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:01.450919 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:13:01.996067 [debug] [Thread-6 (]: SQL status: OK in 3.469 seconds
+[0m14:13:02.110924 [info ] [Thread-5 (]: 22 of 36 PASS not_null_stg_events_event_name ................................... [[32mPASS[0m in 4.99s]
+[0m14:13:02.112803 [debug] [Thread-5 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3
+[0m14:13:02.113363 [debug] [Thread-5 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547
+[0m14:13:02.113862 [info ] [Thread-5 (]: 28 of 36 START test not_null_stg_streaming_events_ingested_at .................. [RUN]
+[0m14:13:02.114693 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_stg_events_event_name.682bd9eda3, now test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547)
+[0m14:13:02.115191 [debug] [Thread-5 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547
+[0m14:13:02.121958 [debug] [Thread-5 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547"
+[0m14:13:02.123744 [debug] [Thread-5 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547
+[0m14:13:02.125349 [debug] [Thread-5 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547"
+[0m14:13:02.129163 [debug] [Thread-5 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ingested_at
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where ingested_at is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:02.129695 [debug] [Thread-5 (]: Opening a new connection, currently in state closed
+[0m14:13:02.223363 [info ] [Thread-7 (]: 19 of 36 PASS not_null_mart_attribution_user_pseudo_id ......................... [[32mPASS[0m in 6.43s]
+[0m14:13:02.224643 [debug] [Thread-7 (]: Finished running node test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50
+[0m14:13:02.225270 [debug] [Thread-7 (]: Began running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78
+[0m14:13:02.225738 [info ] [Thread-7 (]: 29 of 36 START test not_null_stg_streaming_events_user_pseudo_id ............... [RUN]
+[0m14:13:02.226483 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_mart_attribution_user_pseudo_id.f55260bc50, now test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78)
+[0m14:13:02.226935 [debug] [Thread-7 (]: Began compiling node test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78
+[0m14:13:02.344997 [debug] [Thread-7 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78"
+[0m14:13:02.348712 [debug] [Thread-7 (]: Began executing node test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78
+[0m14:13:02.350228 [debug] [Thread-7 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78"
+[0m14:13:02.352679 [debug] [Thread-7 (]: On test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_pseudo_id
+from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+where user_pseudo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:02.353160 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m14:13:02.425750 [debug] [Thread-3 (]: SQL status: OK in 4.036 seconds
+[0m14:13:02.497514 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:c167c83e-6c81-4f38-9015-c0eb4efb6b4d&page=queryresults
+[0m14:13:02.802520 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:5d1f906d-acc2-432b-914d-9e1976c6756e&page=queryresults
+[0m14:13:02.838320 [info ] [Thread-6 (]: 24 of 36 PASS not_null_stg_events_user_pseudo_id ............................... [[32mPASS[0m in 5.52s]
+[0m14:13:02.839642 [debug] [Thread-6 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7
+[0m14:13:02.840083 [debug] [Thread-6 (]: Began running node test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110
+[0m14:13:02.840464 [info ] [Thread-6 (]: 30 of 36 START test unique_fct_first_click_attribution_transaction_id .......... [RUN]
+[0m14:13:02.841196 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_stg_events_user_pseudo_id.3a7c09b2c7, now test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110)
+[0m14:13:02.841617 [debug] [Thread-6 (]: Began compiling node test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110
+[0m14:13:02.850857 [debug] [Thread-6 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110"
+[0m14:13:02.854295 [debug] [Thread-6 (]: Began executing node test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110
+[0m14:13:02.856285 [debug] [Thread-6 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110"
+[0m14:13:02.859222 [debug] [Thread-6 (]: On test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select transaction_id as unique_field
+  from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`fct_first_click_attribution`
+  where transaction_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:02.860150 [debug] [Thread-6 (]: Opening a new connection, currently in state closed
+[0m14:13:02.927956 [debug] [Thread-2 (]: SQL status: OK in 0.430 seconds
+[0m14:13:03.196286 [debug] [Thread-4 (]: SQL status: OK in 0.393 seconds
+[0m14:13:03.349045 [info ] [Thread-3 (]: 23 of 36 PASS not_null_stg_events_event_timestamp .............................. [[32mPASS[0m in 6.21s]
+[0m14:13:03.350228 [debug] [Thread-3 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a
+[0m14:13:03.350558 [debug] [Thread-3 (]: Began running node test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a
+[0m14:13:03.350836 [info ] [Thread-3 (]: 31 of 36 START test unique_fct_last_click_attribution_transaction_id ........... [RUN]
+[0m14:13:03.352746 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_stg_events_event_timestamp.3bec892b8a, now test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a)
+[0m14:13:03.353220 [debug] [Thread-3 (]: Began compiling node test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a
+[0m14:13:03.363673 [debug] [Thread-3 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a"
+[0m14:13:03.366743 [debug] [Thread-3 (]: Began executing node test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a
+[0m14:13:03.371945 [debug] [Thread-3 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a"
+[0m14:13:03.375069 [debug] [Thread-3 (]: On test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select transaction_id as unique_field
+  from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`fct_last_click_attribution`
+  where transaction_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:03.375585 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:13:03.578497 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:f912300e-ccbf-48d5-9ed4-d97f1e302550&page=queryresults
+[0m14:13:03.666772 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:15091dfb-fe7b-49cc-97f0-a4c196cab33e&page=queryresults
+[0m14:13:03.846308 [info ] [Thread-2 (]: 26 of 36 PASS not_null_stg_streaming_events_event_name ......................... [[32mPASS[0m in 2.77s]
+[0m14:13:03.848112 [debug] [Thread-2 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120
+[0m14:13:03.848565 [debug] [Thread-2 (]: Began running node test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367
+[0m14:13:03.848978 [info ] [Thread-2 (]: 32 of 36 START test unique_int_purchases_transaction_id ........................ [RUN]
+[0m14:13:03.849627 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_name.2813163120, now test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367)
+[0m14:13:03.850043 [debug] [Thread-2 (]: Began compiling node test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367
+[0m14:13:03.855807 [debug] [Thread-2 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367"
+[0m14:13:03.859242 [debug] [Thread-2 (]: Began executing node test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367
+[0m14:13:03.861207 [debug] [Thread-2 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367"
+[0m14:13:03.864047 [debug] [Thread-2 (]: On test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select transaction_id as unique_field
+  from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`int_purchases`
+  where transaction_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:03.864765 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:13:04.003059 [debug] [Thread-5 (]: SQL status: OK in 0.423 seconds
+[0m14:13:04.019110 [info ] [Thread-4 (]: 27 of 36 PASS not_null_stg_streaming_events_event_timestamp .................... [[32mPASS[0m in 2.61s]
+[0m14:13:04.020442 [debug] [Thread-4 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e
+[0m14:13:04.021217 [debug] [Thread-4 (]: Began running node test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6
+[0m14:13:04.021770 [info ] [Thread-4 (]: 33 of 36 START test unique_mart_attribution_transaction_id ..................... [RUN]
+[0m14:13:04.022465 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_stg_streaming_events_event_timestamp.18a340701e, now test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6)
+[0m14:13:04.022876 [debug] [Thread-4 (]: Began compiling node test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6
+[0m14:13:04.033218 [debug] [Thread-4 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6"
+[0m14:13:04.035043 [debug] [Thread-4 (]: Began executing node test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6
+[0m14:13:04.040523 [debug] [Thread-4 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6"
+[0m14:13:04.042923 [debug] [Thread-4 (]: On test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select transaction_id as unique_field
+  from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`mart_attribution`
+  where transaction_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:04.043651 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:13:04.094092 [debug] [Thread-7 (]: SQL status: OK in 0.426 seconds
+[0m14:13:04.215377 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:5cea42d8-4041-443c-b040-56f86c876cf8&page=queryresults
+[0m14:13:04.875393 [info ] [Thread-5 (]: 28 of 36 PASS not_null_stg_streaming_events_ingested_at ........................ [[32mPASS[0m in 2.76s]
+[0m14:13:04.876594 [debug] [Thread-5 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547
+[0m14:13:04.877066 [debug] [Thread-5 (]: Began running node test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321
+[0m14:13:04.877466 [info ] [Thread-5 (]: 34 of 36 START test unique_my_first_dbt_model_id ............................... [RUN]
+[0m14:13:04.878226 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_stg_streaming_events_ingested_at.b2512d5547, now test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321)
+[0m14:13:04.878723 [debug] [Thread-5 (]: Began compiling node test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321
+[0m14:13:04.886240 [debug] [Thread-5 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321"
+[0m14:13:04.887640 [debug] [Thread-5 (]: Began executing node test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321
+[0m14:13:04.889178 [debug] [Thread-5 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321"
+[0m14:13:04.890418 [debug] [Thread-5 (]: On test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`my_first_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:04.891164 [debug] [Thread-5 (]: Opening a new connection, currently in state closed
+[0m14:13:04.928201 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:ea660ccd-bf71-4bc6-aba9-162cf8f332e5&page=queryresults
+[0m14:13:04.984369 [info ] [Thread-7 (]: 29 of 36 PASS not_null_stg_streaming_events_user_pseudo_id ..................... [[32mPASS[0m in 2.76s]
+[0m14:13:05.008735 [debug] [Thread-7 (]: Finished running node test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78
+[0m14:13:05.009419 [debug] [Thread-7 (]: Began running node test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:13:05.009927 [info ] [Thread-7 (]: 35 of 36 START test unique_my_second_dbt_model_id .............................. [RUN]
+[0m14:13:05.010782 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.not_null_stg_streaming_events_user_pseudo_id.f304c8fc78, now test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:13:05.011279 [debug] [Thread-7 (]: Began compiling node test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:13:05.023050 [debug] [Thread-7 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:13:05.025284 [debug] [Thread-7 (]: Began executing node test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:13:05.028391 [debug] [Thread-7 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:13:05.030676 [debug] [Thread-7 (]: On test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`my_second_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:05.031380 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m14:13:05.122541 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:6d9005a4-019f-4001-9ddf-013e9ad7db3a&page=queryresults
+[0m14:13:05.434723 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:506ec8fa-ecb6-4b36-982f-0ffdfe7fe5be&page=queryresults
+[0m14:13:06.079938 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:c55986ad-ae29-455c-832d-055606618c25&page=queryresults
+[0m14:13:06.214153 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:52de0c2e-a34d-49a3-93b1-b6995a63f132&page=queryresults
+[0m14:13:06.491561 [debug] [Thread-5 (]: SQL status: OK in 0.411 seconds
+[0m14:13:06.600046 [debug] [Thread-7 (]: SQL status: OK in 0.385 seconds
+[0m14:13:07.414026 [info ] [Thread-7 (]: 35 of 36 PASS unique_my_second_dbt_model_id .................................... [[32mPASS[0m in 2.40s]
+[0m14:13:07.415287 [debug] [Thread-7 (]: Finished running node test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:13:07.415647 [debug] [Thread-7 (]: Began running node test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e
+[0m14:13:07.416008 [info ] [Thread-7 (]: 36 of 36 START test unique_stg_streaming_events_event_id ....................... [RUN]
+[0m14:13:07.417647 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.pipeline_assessment_20260926.unique_my_second_dbt_model_id.57a0f8c493, now test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e)
+[0m14:13:07.418120 [debug] [Thread-7 (]: Began compiling node test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e
+[0m14:13:07.430665 [debug] [Thread-7 (]: Writing injected SQL for node "test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e"
+[0m14:13:07.431963 [info ] [Thread-5 (]: 34 of 36 PASS unique_my_first_dbt_model_id ..................................... [[32mPASS[0m in 2.55s]
+[0m14:13:07.432896 [debug] [Thread-5 (]: Finished running node test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321
+[0m14:13:07.434470 [debug] [Thread-7 (]: Began executing node test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e
+[0m14:13:07.436621 [debug] [Thread-7 (]: Writing runtime sql for node "test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e"
+[0m14:13:07.439649 [debug] [Thread-7 (]: On test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select event_id as unique_field
+  from `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_streaming_events`
+  where event_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:13:07.440714 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m14:13:08.791788 [debug] [Thread-2 (]: SQL status: OK in 3.669 seconds
+[0m14:13:08.933445 [debug] [Thread-3 (]: SQL status: OK in 4.004 seconds
+[0m14:13:09.217251 [debug] [Thread-6 (]: SQL status: OK in 5.001 seconds
+[0m14:13:09.693524 [info ] [Thread-2 (]: 32 of 36 PASS unique_int_purchases_transaction_id .............................. [[32mPASS[0m in 5.84s]
+[0m14:13:09.694552 [debug] [Thread-2 (]: Finished running node test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367
+[0m14:13:09.812674 [debug] [Thread-4 (]: SQL status: OK in 4.377 seconds
+[0m14:13:09.821228 [info ] [Thread-3 (]: 31 of 36 PASS unique_fct_last_click_attribution_transaction_id ................. [[32mPASS[0m in 6.47s]
+[0m14:13:09.822878 [debug] [Thread-3 (]: Finished running node test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a
+[0m14:13:10.181336 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:938a0e44-eed2-4d78-96d9-3707e57206ff&page=queryresults
+[0m14:13:10.179643 [info ] [Thread-6 (]: 30 of 36 PASS unique_fct_first_click_attribution_transaction_id ................ [[32mPASS[0m in 7.34s]
+[0m14:13:10.182943 [debug] [Thread-6 (]: Finished running node test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110
+[0m14:13:10.665189 [debug] [Thread-7 (]: SQL status: OK in 0.483 seconds
+[0m14:13:11.194102 [info ] [Thread-4 (]: 33 of 36 PASS unique_mart_attribution_transaction_id ........................... [[32mPASS[0m in 7.17s]
+[0m14:13:11.195079 [debug] [Thread-4 (]: Finished running node test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6
+[0m14:13:11.523597 [info ] [Thread-7 (]: 36 of 36 PASS unique_stg_streaming_events_event_id ............................. [[32mPASS[0m in 4.11s]
+[0m14:13:11.524556 [debug] [Thread-7 (]: Finished running node test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e
+[0m14:13:11.534648 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:13:11.573826 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:13:11.574245 [debug] [MainThread]: Connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce' was properly closed.
+[0m14:13:11.574518 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m14:13:11.574761 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.unique_stg_streaming_events_event_id.60b51c189e' was properly closed.
+[0m14:13:11.574995 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.unique_int_purchases_transaction_id.34e9176367' was properly closed.
+[0m14:13:11.575235 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.unique_fct_first_click_attribution_transaction_id.8736c00110' was properly closed.
+[0m14:13:11.575465 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.unique_fct_last_click_attribution_transaction_id.b754035e0a' was properly closed.
+[0m14:13:11.575694 [debug] [MainThread]: Connection 'test.pipeline_assessment_20260926.unique_mart_attribution_transaction_id.9e23f84eb6' was properly closed.
+[0m14:13:11.576004 [info ] [MainThread]: 
+[0m14:13:11.576753 [info ] [MainThread]: Finished running 36 data tests in 0 hours 0 minutes and 39.17 seconds (39.17s).
+[0m14:13:11.584039 [debug] [MainThread]: Command end result
+[0m14:13:11.643865 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m14:13:11.649095 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m14:13:11.654295 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m14:13:11.674229 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m14:13:11.675201 [info ] [MainThread]: 
+[0m14:13:11.677242 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:13:11.677929 [info ] [MainThread]: 
+[0m14:13:11.679230 [info ] [MainThread]: Done. PASS=36 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=36
+[0m14:13:11.681571 [debug] [MainThread]: Command `dbt test` succeeded at 14:13:11.681340 after 47.35 seconds
+[0m14:13:11.682147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528CB66B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252F8F3BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252F8F3BCD0>]}
+[0m14:13:11.682609 [debug] [MainThread]: Flushing usage events
+[0m14:13:13.390796 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:15:17.045389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021071C7A900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002106F829090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021074683890>]}
+
+
+============================== 14:15:17.052336 | e1d1c882-08c5-4bfd-8121-fb5ae47cc4b6 ==============================
+[0m14:15:17.052336 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:15:17.053061 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\anant\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select stg_events', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\anant\\Pipeline-assessment-20260926\\logs'}
+[0m14:15:18.745816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e1d1c882-08c5-4bfd-8121-fb5ae47cc4b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210065589D0>]}
+[0m14:15:18.799414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e1d1c882-08c5-4bfd-8121-fb5ae47cc4b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002106F838380>]}
+[0m14:15:18.800209 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m14:15:19.228813 [debug] [MainThread]: checksum: f8a9b75252ccb790f5176ec3aec63fa35a352d46928c70d4b9123009cb9f1063, vars: {}, profile: mynewproject, target: dev, version: 1.12.5
+[0m14:15:19.438718 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:15:19.439087 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:15:19.439344 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:15:19.451285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e1d1c882-08c5-4bfd-8121-fb5ae47cc4b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021007C02250>]}
+[0m14:15:19.614128 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m14:15:19.618181 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m14:15:19.659806 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m14:15:19.688743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e1d1c882-08c5-4bfd-8121-fb5ae47cc4b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021007CE5400>]}
+[0m14:15:19.689318 [info ] [MainThread]: Found 14 models, 36 data tests, 1 source, 561 macros
+[0m14:15:19.689785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1d1c882-08c5-4bfd-8121-fb5ae47cc4b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021007D39390>]}
+[0m14:15:19.692014 [info ] [MainThread]: 
+[0m14:15:19.692501 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m14:15:19.693008 [info ] [MainThread]: 
+[0m14:15:19.694124 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:15:19.697378 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596'
+[0m14:15:19.697764 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:15:20.755724 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce'
+[0m14:15:20.756102 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:15:22.025164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1d1c882-08c5-4bfd-8121-fb5ae47cc4b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021007D7A8F0>]}
+[0m14:15:22.025647 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:15:22.068054 [debug] [Thread-3 (]: Began running node model.pipeline_assessment_20260926.stg_events
+[0m14:15:22.068567 [info ] [Thread-3 (]: 1 of 1 START sql view model ga4_obfuscated_sample_ecommerce.stg_events ......... [RUN]
+[0m14:15:22.069327 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.pipeline_assessment_20260926.stg_events'
+[0m14:15:22.069645 [debug] [Thread-3 (]: Began compiling node model.pipeline_assessment_20260926.stg_events
+[0m14:15:22.083694 [debug] [Thread-3 (]: Writing injected SQL for node "model.pipeline_assessment_20260926.stg_events"
+[0m14:15:22.085538 [debug] [Thread-3 (]: Began executing node model.pipeline_assessment_20260926.stg_events
+[0m14:15:22.123016 [debug] [Thread-3 (]: Writing runtime sql for node "model.pipeline_assessment_20260926.stg_events"
+[0m14:15:22.125402 [debug] [Thread-3 (]: On model.pipeline_assessment_20260926.stg_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "mynewproject", "target_name": "dev", "node_id": "model.pipeline_assessment_20260926.stg_events"} */
+
+
+  create or replace view `assessment-28596`.`ga4_obfuscated_sample_ecommerce`.`stg_events`
+  OPTIONS()
+  as 
+
+with source as (
+    select *
+    from `bigquery-public-data`.`ga4_obfuscated_sample_ecommerce`.`events_*`
+)
+
+select
+        parse_date('%Y%m%d', event_date)   as event_date,
+        timestamp_micros(event_timestamp)  as event_timestamp,
+        event_name,
+        user_pseudo_id,
+-- session id/number inside the repeated event_params array
+        (select value.int_value from unnest(event_params) where key = 'ga_session_id')     as ga_session_id,
+        (select value.int_value from unnest(event_params) where key = 'ga_session_number') as ga_session_number,
+        (select value.string_value from unnest(event_params) where key = 'source') as event_source,
+        (select value.string_value from unnest(event_params) where key = 'medium') as event_medium,
+-- user-level first-touch acquisition (recorded once per user, repeated on every event)
+        traffic_source.source   as user_acquisition_source,
+        traffic_source.medium   as user_acquisition_medium,
+        ecommerce.transaction_id    as transaction_id,
+        ecommerce.purchase_revenue  as purchase_revenue
+from source;
+
+
+[0m14:15:22.125957 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:15:23.439249 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-28596&j=bq:US:44920530-9a68-4e47-81d4-147e5dc60497&page=queryresults
+[0m14:15:24.311696 [debug] [Thread-3 (]: SQL status: OK in 0.871 seconds
+[0m14:15:24.401234 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e1d1c882-08c5-4bfd-8121-fb5ae47cc4b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021007CEA390>]}
+[0m14:15:24.401837 [info ] [Thread-3 (]: 1 of 1 OK created sql view model ga4_obfuscated_sample_ecommerce.stg_events .... [[32mCREATE VIEW (0 processed)[0m in 2.33s]
+[0m14:15:24.402961 [debug] [Thread-3 (]: Finished running node model.pipeline_assessment_20260926.stg_events
+[0m14:15:24.404878 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:15:24.438654 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:15:24.438995 [debug] [MainThread]: Connection 'list_assessment-28596' was properly closed.
+[0m14:15:24.439206 [debug] [MainThread]: Connection 'list_assessment-28596_ga4_obfuscated_sample_ecommerce' was properly closed.
+[0m14:15:24.439398 [debug] [MainThread]: Connection 'model.pipeline_assessment_20260926.stg_events' was properly closed.
+[0m14:15:24.439622 [info ] [MainThread]: 
+[0m14:15:24.440179 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.75 seconds (4.75s).
+[0m14:15:24.440971 [debug] [MainThread]: Command end result
+[0m14:15:24.553740 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anant\Pipeline-assessment-20260926\target\manifest.json
+[0m14:15:24.558048 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anant\Pipeline-assessment-20260926\target\semantic_manifest.json
+[0m14:15:24.562118 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\anant\Pipeline-assessment-20260926\target\osi_document.json
+[0m14:15:24.569823 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anant\Pipeline-assessment-20260926\target\run_results.json
+[0m14:15:24.570213 [info ] [MainThread]: 
+[0m14:15:24.570741 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:15:24.571355 [info ] [MainThread]: 
+[0m14:15:24.571763 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m14:15:24.572728 [debug] [MainThread]: Command `dbt run` succeeded at 14:15:24.572619 after 7.73 seconds
+[0m14:15:24.573047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021007DA5440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002106E3DE3F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002100659FED0>]}
+[0m14:15:24.573348 [debug] [MainThread]: Flushing usage events
+[0m14:15:25.747724 [debug] [MainThread]: An error was encountered while trying to flush usage events
